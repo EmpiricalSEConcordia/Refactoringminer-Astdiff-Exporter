@@ -48,7 +48,7 @@ jobs:
 
     steps:
       - name: Run ASTDiff Bot
-        uses: pouryafard75/refactoringminer-astdiff-exporter@v0.4
+        uses: pouryafard75/refactoringminer-astdiff-exporter@v1.1
         with:
           OAuthToken: ${{ secrets.GITHUB_TOKEN }}
           URL: https://github.com/Alluxio/alluxio/commit/9aeefcd8120bb3b89cdb437d8c32d2ed84b8a825

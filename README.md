@@ -65,8 +65,10 @@ Below is an example of a bot that listens for the `@diff` keyword in issue comme
 name: AST diff Bot
 
 on:
+  issues:
+    types: [opened, edited]
   issue_comment:
-    types: [created]
+    types: [created, edited]
 
 jobs:
   diff:
@@ -81,18 +83,25 @@ jobs:
         uses: actions/github-script@v6
         with:
           script: |
-            const commentBody = context.payload.comment.body;
+            let body = "";
+            if (context.payload.issue && context.eventName === "issues") {
+            body = context.payload.issue.body || "";
+            console.log("Checking issue body...");
+            } else if (context.payload.comment && context.eventName === "issue_comment") {
+            body = context.payload.comment.body || "";
+            console.log("Checking comment body...");
+            }
             const regexScreenshot = /@diff\s+(\S+)\s+(\S+)/;  // Match URL + screenshot flag
             const regexArtifact = /@diff\s+(\S+)/;  // Match only URL
     
-            let match = commentBody.match(regexScreenshot);
+            let match = body.match(regexScreenshot);
             if (match) {
               core.setOutput('triggered', 'true');
               core.setOutput('url', match[1].trim()); 
               core.setOutput('screenshot', match[2].trim());
               core.setOutput('mode', 'screenshot');
             } else {
-              match = commentBody.match(regexArtifact);
+              match = body.match(regexArtifact);
               if (match) {
                 core.setOutput('triggered', 'true');
                 core.setOutput('url', match[1].trim()); 
@@ -102,8 +111,6 @@ jobs:
                 core.setOutput('triggered', 'false');
               }
             }
-
-
 
       # Step 1: Run the exporter
       - name: Running the RM action exporter
@@ -152,7 +159,7 @@ jobs:
           echo "EOF" >> $GITHUB_ENV
 
       - name: Upload image
-        if: ${{ steps.trigger.outputs.screenshot != null }}
+        if: ${{ steps.trigger.outputs.screenshot != null && steps.run_rm_exporter.outputs.numberOfScreenshots != 0 }}
         id: upload-image-all
         uses: McCzarny/upload-image@v1.5.0
         with:
@@ -163,7 +170,7 @@ jobs:
 
       - name: 'Comment Screenshots'
         uses: actions/github-script@v7
-        if: ${{ steps.trigger.outputs.screenshot != null }}
+        if: ${{ steps.trigger.outputs.screenshot != null && steps.run_rm_exporter.outputs.numberOfScreenshots != 0 }}
         with:
           script: |
             let commentBody = 'Image(s):\n';

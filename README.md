@@ -115,7 +115,7 @@ jobs:
       # Step 1: Run the exporter
       - name: Running the RM action exporter
         if : ${{ steps.trigger.outputs.triggered == 'true'}}
-        uses: pouryafard75/refactoringminer-astdiff-exporter@v1.0
+        uses: pouryafard75/refactoringminer-astdiff-exporter@v1.1
         id: run_rm_exporter
         with:
           OAuthToken: ${{ secrets.OAUTHTOKEN }}
@@ -141,6 +141,7 @@ jobs:
 
       - name: Generate image list
         id: generate-paths
+        if: ${{ steps.trigger.outputs.screenshot != null && steps.run_rm_exporter.outputs.numberOfScreenshots != 0 }}
         run: |
           # Ensure the output from the previous step is evaluated properly
           number_of_screenshots="${{ steps.run_rm_exporter.outputs.numberOfScreenshots }}"

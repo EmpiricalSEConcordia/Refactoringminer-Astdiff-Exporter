@@ -174,6 +174,7 @@ jobs:
         if: ${{ steps.trigger.outputs.screenshot != null && steps.run_rm_exporter.outputs.numberOfScreenshots != 0 }}
         with:
           script: |
+            await new Promise(resolve => setTimeout(resolve, 1000));
             let commentBody = 'Image(s):\n';
             console.log('Initializing comment body...');
             const varValue = ${{ steps.run_rm_exporter.outputs.numberOfScreenshots }}

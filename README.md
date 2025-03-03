@@ -194,7 +194,7 @@ jobs:
               const imageUrl = urls[index]; // Access the specific image URL
 
               // Append the image URL to the comment body
-              commentBody += `![${i}](${imageUrl})\n`;
+              commentBody += `![${i}](${imageUrl}?raw=true)\n`;
             }
 
             console.log('Comment body constructed:\n' + commentBody);

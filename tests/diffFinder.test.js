@@ -5,6 +5,7 @@ const resourcePath = "resources/test/";
 const screenshotFolder = "screenshots/";
 const artifactFolder = "artifact/";
 
+
 describe("DiffFinder test", () => {
     let workspacePath;
 

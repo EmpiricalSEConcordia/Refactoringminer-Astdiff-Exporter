@@ -1,0 +1,31 @@
+name: Test Action
+
+on:
+  workflow_dispatch:  # Trigger manually via GitHub UI
+  
+jobs:
+  Run_Custom_Action:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Use custom action from the root
+        uses: ./
+        id : customAction
+        with:
+          URL: "https://github.com/apache/kafka/commit/d171ff08a70f9fa8065e6661fcc1f3da092d7faf"
+          screenshot: "ConfigurationControlManagerTest.java"
+
+      - name: Upload screenshots
+        uses: actions/upload-artifact@v4
+        with:
+          name: screenshot
+          path: ${{ steps.customAction.outputs.screenshots_path}}
+  
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: artifact
+          path: ${{ steps.customAction.outputs.artifact_path}}

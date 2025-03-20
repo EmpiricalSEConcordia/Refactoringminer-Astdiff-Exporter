@@ -3,6 +3,7 @@ const exec = require('@actions/exec');
 const path = require('path');
 const takeScreenshots = require('./utils/screenshot');
 const fs = require('fs');
+const {getImageFromDockerHub, buildImageFromRepo } = require('./utils/docker');
 run();
 async function run(outdir = "out") { 
     try {

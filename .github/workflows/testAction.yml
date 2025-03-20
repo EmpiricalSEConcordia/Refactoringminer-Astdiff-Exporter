@@ -25,11 +25,11 @@ jobs:
       - name: Upload screenshots
         uses: actions/upload-artifact@v4
         with:
-          name: screenshot
+          name: screenshot-${{ matrix.fromDockerHub }}
           path: ${{ steps.customAction.outputs.screenshots_path}}
   
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: artifact
+          name: artifact-${{ matrix.fromDockerHub }}
           path: ${{ steps.customAction.outputs.artifact_path}}

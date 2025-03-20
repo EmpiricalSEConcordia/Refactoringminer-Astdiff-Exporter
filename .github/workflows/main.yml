@@ -63,7 +63,7 @@ jobs:
   runActions:
     needs: build_dist
     runs-on: ubuntu-latest
-    if: github.repository == 'EmpiricalSEConcordia/Refactoringminer-Astdiff-Exporter/' && github.ref == 'refs/heads/main'
+    if: github.repository == 'EmpiricalSEConcordia/Refactoringminer-Astdiff-Exporter' && github.ref == 'refs/heads/main'
     permissions:
       contents: write
     steps:

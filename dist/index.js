@@ -284866,7 +284866,7 @@ async function run(outdir = "out") {
       const url = core.getInput('URL') || process.env.defaultURLValue;
       const oauthToken = core.getInput('OAuthToken') || process.env.GITHUB_TOKEN || process.env.defaultOAuthTokenValue;
       const screenshot = core.getInput('screenshot') || process.env.defaultScreenshotValue;
-      const fromDockerHub = core.getInput('fromDockerHub') || true;
+      const fromDockerHub = core.getInput('fromDockerHub') ?? true;
   
       console.log(`URL: ${url}`);
       console.log(`OAuthToken: ${oauthToken}`);

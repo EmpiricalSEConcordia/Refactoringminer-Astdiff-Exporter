@@ -1,12 +1,15 @@
 name: Test Action
 
 on:
-  workflow_dispatch:  # Trigger manually via GitHub UI
-
+  workflow_dispatch:
+  repository_dispatch:
+    types: [test]
 jobs:
   Run_Custom_Action:
     runs-on: ubuntu-latest
-
+    strategy:
+      matrix:
+        fromDockerHub: [true, false]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -17,6 +20,7 @@ jobs:
         with:
           URL: "https://github.com/Alluxio/alluxio/commit/9aeefcd8120bb3b89cdb437d8c32d2ed84b8a825"
           screenshot: "JAVA"
+          fromDockerHub: ${{ matrix.fromDockerHub }}
 
       - name: Upload screenshots
         uses: actions/upload-artifact@v4

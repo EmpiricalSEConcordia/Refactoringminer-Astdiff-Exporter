@@ -1,12 +1,15 @@
-name: Test Action
+name: Test Action (Large commit)
 
 on:
-  workflow_dispatch:  # Trigger manually via GitHub UI
-  
+  workflow_dispatch:  
+  repository_dispatch:
+    types: [test]
 jobs:
   Run_Custom_Action:
     runs-on: ubuntu-latest
-
+    strategy:
+      matrix:
+        fromDockerHub: [true, false]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -17,6 +20,7 @@ jobs:
         with:
           URL: "https://github.com/apache/kafka/commit/d171ff08a70f9fa8065e6661fcc1f3da092d7faf"
           screenshot: "ConfigurationControlManagerTest.java"
+          fromDockerHub: ${{ matrix.fromDockerHub }}
 
       - name: Upload screenshots
         uses: actions/upload-artifact@v4

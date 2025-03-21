@@ -19,6 +19,8 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+            token: ${{ secrets.OAUTHTOKENWRITE }}
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -26,13 +28,30 @@ jobs:
           node-version: '20'
           cache: 'npm'
 
+      - run: |
+          npm install
+          sudo apt-get install -y figlet
+
       - name: Install dependencies
         run: npm ci
 
       - name: Run tests
         run: |
-          echo "Running tests on $(date)" >> logs/testResult.txt
+          TIMESTAMP=$(date +"%Y-%m-%d %H:%M:%S")
+          echo "Test Results - $TIMESTAMP" >> logs/testResult.txt
+          figlet "Test Results" >> logs/testResult.txt
           npm test >> logs/testResult.txt 2>&1
+
+
+      - name: Commit test results
+        run: |
+          git config --global user.name 'pouryafard75'
+          git config --global user.email 'pouryafard75@gmail.com'
+          git diff --exit-code logs || (
+              git add logs
+              git commit -m 'chore: update test logs'
+              git push
+              )
         
   build_dist:
     needs: test
@@ -59,8 +78,8 @@ jobs:
 
       - name: Commit and push dist folder
         run: |
-            git config --global user.name 'pouryafard75'
-            git config --global user.email 'pouryafard75@gmail.com'
+            git config --global user.name 'github-actions'
+            git config --global user.email 'github-actions@github.com'
             git diff --exit-code dist || (
                 git add dist
                 git commit -m 'chore: update dist folder'

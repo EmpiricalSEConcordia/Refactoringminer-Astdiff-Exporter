@@ -3,7 +3,7 @@ name: Test Action
 on:
   workflow_dispatch:
   repository_dispatch:
-    types: [test]
+    types: [dispatch_tests]
 jobs:
   Run_Custom_Action:
     runs-on: ubuntu-latest

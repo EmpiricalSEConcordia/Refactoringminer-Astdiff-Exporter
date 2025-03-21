@@ -6,7 +6,6 @@ const fs = require('fs');
 const {getImageFromDockerHub, buildImageFromRepo } = require('./docker');
 async function run(outdir = "out") { 
     try {
-      // Get inputs
       const url = core.getInput('URL') || process.env.defaultURLValue;
       const oauthToken = core.getInput('OAuthToken') || process.env.GITHUB_TOKEN || process.env.defaultOAuthTokenValue;
       const screenshot = core.getInput('screenshot') || process.env.defaultScreenshotValue;

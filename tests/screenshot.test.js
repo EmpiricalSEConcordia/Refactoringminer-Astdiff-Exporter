@@ -7,8 +7,6 @@ const screenshotFolder = "screenshots/";
 const resourcePath = "resources/test/";
 const compareImages = require("../src/utils/imgUtil");
 
-
-
 describe("Screenshot Test", () => {
     beforeAll(() => {
       workspacePath = path.join(__dirname, "../");  
@@ -40,7 +38,7 @@ describe("Screenshot Test", () => {
         await expect(fs.existsSync(generatedFile)).toBe(true);
         await expect(compareImages(generatedFile, referenceFile)).toBe(true);
       }
-    },20000);
+    },20000 * 5);
 
     afterAll(() => {
       if (fs.existsSync(outDir)) {

@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     env: 
       OAuthToken : ${{ secrets.OAUTHTOKENREAD }}
-    if: github.actor != 'github-actions'
+    if: ${{ github.actor != 'github-actions' }}
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -54,8 +54,8 @@ jobs:
 
       - name: Commit test results
         run: |
-          git config --global user.name 'pouryafard75'
-          git config --global user.email 'pouryafard75@gmail.com'
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
           git diff --exit-code logs || (
               git add logs
               git commit -m 'chore: update test logs'
@@ -63,6 +63,7 @@ jobs:
               )
         
   build_dist:
+    if: ${{ github.actor != 'github-actions' }}
     needs: test
     runs-on: ubuntu-latest
     steps:
@@ -98,7 +99,7 @@ jobs:
   runActions:
     needs: build_dist
     runs-on: ubuntu-latest
-    if: github.repository == 'EmpiricalSEConcordia/Refactoringminer-Astdiff-Exporter' && github.ref == 'refs/heads/main'
+    if: ${{ github.actor != 'github-actions' }}
     permissions:
       contents: write
     steps:

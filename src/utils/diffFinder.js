@@ -4,8 +4,10 @@ const path = require("path");
 
 function getMatchingIds(inputString, exportDir, infoFilePath='info.json') {
     console.log('Reading info.json...');
+    console.log(exportDir);
     const data = fs.readFileSync(path.join(exportDir, "web", infoFilePath), 'utf8');
     const jsonData = JSON.parse(data);
+    console.log(data);
     const matchingIds = [];
     jsonData.diffInfos.forEach(item => {
         if (

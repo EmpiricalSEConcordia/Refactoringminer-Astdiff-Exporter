@@ -1,4 +1,5 @@
-const puppeteer = require('puppeteer');
+const { chromium, firefox, webkit } = require('playwright');
+
 const getMatchingIds = require('./diffFinder');
 const fs = require('fs');
 const path = require('path');
@@ -22,32 +23,25 @@ async function takeScreenshots(inputFilePath, exportDir, outputDir = 'out', info
     console.log('Launching browser...');
     let browser;
     try {
-        browser = await puppeteer.launch({
-            timeout: 10000,
-            args: [
-                '--no-sandbox',
-                '--disable-setuid-sandbox',
-                '--disable-dev-shm-usage',
-                '--disable-gpu',
-                '--disable-font-subpixel-positioning',
-                '--force-color-profile=srgb'
-            ]
-        });        
+        browser = await chromium.launch({ headless: false });  
         console.log('Browser launched.');
     } catch (error) {
         console.error('Error launching browser:', error);
     }
     
-    const page = await browser.newPage();
-  
-    await page.setViewport({ width: 1920, height: 1080 });
+    const context = await browser.newContext({
+        viewport: { width: 1920, height: 1080 }
+      });
+    const page = await context.newPage();
+
     
-    index = 0;
+    let index = 0;
     for (const num of pageNumbers) {
         index++;
         const url = getExportedMonacoUrl(num);
         console.log(`Navigating to: ${url}`);
-        await page.goto(url, { waitUntil: ['networkidle2', 'domcontentloaded', 'networkidle0']});
+
+        await page.goto(url, { waitUntil: 'networkidle' }); // Playwright uses 'networkidle'
         const screenshotPath = path.join(outputDir, `${index}.png`);
         await page.screenshot({ path: screenshotPath, fullPage: true });
         console.log(`Saved screenshot: ${screenshotPath}`);

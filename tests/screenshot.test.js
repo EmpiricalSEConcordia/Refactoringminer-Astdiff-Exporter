@@ -1,14 +1,11 @@
 const takeScreenshots = require("../src/utils/screenshot");
 const path = require("path");
 const fs = require("fs");
-const crypto = require("crypto");
-const { PNG } = require('pngjs');
-const ssim = require('ssim.js');
-
 const outFolder = "out/";
 const artifactFolder = "artifact/";
 const screenshotFolder = "screenshots/";
 const resourcePath = "resources/test/";
+const compareImages = require("../src/utils/imgUtil");
 
 
 
@@ -50,29 +47,4 @@ describe("Screenshot Test", () => {
         fs.rmdirSync(outDir, { recursive: true });
       }
     });
-
-  function areFilesIdentical(file1, file2) {
-    if (!fs.existsSync(file1)) return false;
-    if (!fs.existsSync(file2)) return false;
-    const hash1 = crypto.createHash("sha256").update(fs.readFileSync(file1)).digest("hex");
-    const hash2 = crypto.createHash("sha256").update(fs.readFileSync(file2)).digest("hex");
-    console.log(`hash1: ${hash1}`);
-    console.log(`hash2: ${hash2}`);
-    return hash1 === hash2;
-  };
-  function compareImages(image1Path, image2Path) {
-    const img1 = PNG.sync.read(fs.readFileSync(image1Path));
-    const img2 = PNG.sync.read(fs.readFileSync(image2Path));
-
-    const ssimResult = ssim.ssim(img1, img2);
-    console.log(`SSIM Score: ${ssimResult.mssim}`);
-
-    if (ssimResult.mssim > 0.50) {
-        console.log("✅ Images are very similar with SSIM score: ", ssimResult.mssim);
-        return true;
-    } else {
-        console.log("⚠️ Images differ with SSIM score: ", ssimResult.mssim);
-        return false;
-    }
-  }
 });

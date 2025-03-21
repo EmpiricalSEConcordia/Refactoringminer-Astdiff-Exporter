@@ -20,13 +20,10 @@
     "ssim.js": "^3.5.0",
     "stream-browserify": "^3.0.0",
     "url": "^0.11.4",
-    "util": "^0.12.5",
-    "next": "14.3.0-canary.59",
-    "react": "19.0.0-beta-4508873393-20240430",
-    "react-dom": "19.0.0-beta-4508873393-20240430"
+    "util": "^0.12.5"
   },
   "scripts": {
-    "test": "jest --runInBand"
+    "test": "jest"
   },
   "devDependencies": {
     "playwright": "^1.51.1"

@@ -4,6 +4,8 @@ const path = require('path');
 const takeScreenshots = require('./screenshot');
 const fs = require('fs');
 const {getImageFromDockerHub, buildImageFromRepo } = require('./docker');
+
+
 async function run(outdir = "out") { 
     try {
       const url = core.getInput('URL') || process.env.defaultURLValue;

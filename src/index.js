@@ -1,2 +1,2 @@
-import { run } from './utils/core.js';
+const run = require('./utils/core.js');
 run();

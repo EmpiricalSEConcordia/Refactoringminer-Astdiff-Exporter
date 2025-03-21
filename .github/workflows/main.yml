@@ -42,6 +42,15 @@ jobs:
           figlet "Test Results" >> logs/testResult.txt
           npm test >> logs/testResult.txt 2>&1
 
+      - name: Remove token from logs
+        run: |
+          echo "Removing sensitive tokens from test results..."
+          # Using a delimiter to avoid conflicts with special characters in the token
+          sed -i "s|${{ secrets.GITHUB_TOKEN }}|MASKED_TOKEN|g" logs/testResult.txt
+          sed -i "s|${{ secrets.OAUTHTOKENREAD }}|MASKED_TOKEN|g" logs/testResult.txt
+          sed -i "s|${{ secrets.OAUTHTOKENWRITE }}|MASKED_TOKEN|g" logs/testResult.txt
+          sed -i "s|${{ env.OAuthToken }}|MASKED_TOKEN|g" logs/testResult.txt
+
 
       - name: Commit test results
         run: |

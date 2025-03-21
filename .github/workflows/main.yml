@@ -7,6 +7,8 @@ on:
   pull_request:
     branches:
       - main
+  schedule:
+    - cron: '0 0 * * *' # Runs every day at 00:00 UTC
 
 jobs:
   test:
@@ -28,9 +30,10 @@ jobs:
         run: npm ci
 
       - name: Run tests
-        run: npm test
+        run: |
+          echo "Running tests on $(date)" >> logs/testResult.txt
+          npm test >> logs/testResult.txt 2>&1
         
-
   build_dist:
     needs: test
     runs-on: ubuntu-latest
@@ -56,8 +59,8 @@ jobs:
 
       - name: Commit and push dist folder
         run: |
-            git config --global user.name 'github-actions'
-            git config --global user.email 'github-actions@github.com'
+            git config --global user.name 'pouryafard75'
+            git config --global user.email 'pouryafard75@gmail.com'
             git diff --exit-code dist || (
                 git add dist
                 git commit -m 'chore: update dist folder'

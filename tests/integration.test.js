@@ -59,6 +59,7 @@ describe("Integration Test", () => {
         const generatedFile = path.join(screenshotOutputPath, `${i}.png`);
         const referenceFile = path.join(resBasePath, screenshotFolder, `${i}.png`);    
         compareImages(generatedFile, referenceFile); 
+        //TODO: Add assertion for the comparison
       }
     }, 10000 * 10);
   });

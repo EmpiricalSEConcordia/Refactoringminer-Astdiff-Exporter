@@ -23310,3 +23310,1556 @@ Tests:       4 passed, 4 total
 Snapshots:   0 total
 Time:        63.074 s
 Ran all test suites.
+Test Results - 2025-03-30 01:17:36
+ _____         _     ____                 _ _       
+|_   _|__  ___| |_  |  _ \ ___  ___ _   _| | |_ ___ 
+  | |/ _ \/ __| __| | |_) / _ \/ __| | | | | __/ __|
+  | |  __/\__ \ |_  |  _ <  __/\__ \ |_| | | |_\__ \
+  |_|\___||___/\__| |_| \_\___||___/\__,_|_|\__|___/
+                                                    
+
+> test
+> jest
+
+PASS tests/diffFinder.test.js
+  ● Console
+
+    console.log
+      Reading info.json...
+
+      at log (src/utils/diffFinder.js:6:13)
+
+    console.log
+      Matching IDs: [ 0 ]
+
+      at log (src/utils/diffFinder.js:18:13)
+
+[command]/opt/hostedtoolcache/node/20.19.0/x64/bin/npx playwright install
+[command]/usr/bin/docker pull tsantalis/refactoringminer:latest
+latest: Pulling from tsantalis/refactoringminer
+f18232174bc9: Pulling fs layer
+5086d3c84c16: Pulling fs layer
+a8381994b621: Pulling fs layer
+a6903c5aaf33: Pulling fs layer
+f56257e799ee: Pulling fs layer
+4f4fb700ef54: Pulling fs layer
+a6903c5aaf33: Waiting
+f56257e799ee: Waiting
+4f4fb700ef54: Waiting
+Downloading Chromium 134.0.6998.35 (playwright build v1161) from https://cdn.playwright.dev/dbazure/download/playwright/builds/chromium/1161/chromium-linux.zip
+f18232174bc9: Verifying Checksum
+f18232174bc9: Download complete
+a8381994b621: Download complete
+f18232174bc9: Pull complete
+f56257e799ee: Download complete
+|                                                                                |   0% of 164.9 MiB
+4f4fb700ef54: Verifying Checksum
+4f4fb700ef54: Download complete
+|■■■■■■■■                                                                        |  10% of 164.9 MiB
+5086d3c84c16: Verifying Checksum
+5086d3c84c16: Download complete
+|■■■■■■■■■■■■■■■■                                                                |  20% of 164.9 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 164.9 MiB
+a6903c5aaf33: Verifying Checksum
+a6903c5aaf33: Download complete
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 164.9 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 164.9 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 164.9 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 164.9 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 164.9 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 164.9 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 164.9 MiB
+5086d3c84c16: Pull complete
+a8381994b621: Pull complete
+a6903c5aaf33: Pull complete
+f56257e799ee: Pull complete
+4f4fb700ef54: Pull complete
+Digest: sha256:a69df8265412b75e1a97efb9a142933f558a2474fa1eb78d69d279bb9b170124
+Status: Downloaded newer image for tsantalis/refactoringminer:latest
+docker.io/tsantalis/refactoringminer:latest
+[command]/usr/bin/docker run --env OAuthToken=MASKED_TOKEN -v /home/runner/work/Refactoringminer-Astdiff-Exporter/Refactoringminer-Astdiff-Exporter/exportedFromDocker:/diff/exported --entrypoint /bin/sh tsantalis/refactoringminer:latest -c refactoringminer diff --url https://github.com/Alluxio/alluxio/commit/9aeefcd8120bb3b89cdb437d8c32d2ed84b8a825 -e &&           unzip /opt/refactoringminer/lib/RefactoringMiner-DockerBuild.jar -d /tmp/refactoringminer &&           mkdir -p /diff/exported/web &&           cp -r /tmp/refactoringminer/web /diff/exported/web/resources
+Chromium 134.0.6998.35 (playwright build v1161) downloaded to /home/runner/.cache/ms-playwright/chromium-1161
+Downloading Chromium Headless Shell 134.0.6998.35 (playwright build v1161) from https://cdn.playwright.dev/dbazure/download/playwright/builds/chromium/1161/chromium-headless-shell-linux.zip
+|                                                                                |   0% of 100.9 MiB
+|■■■■■■■■                                                                        |  10% of 100.9 MiB
+|■■■■■■■■■■■■■■■■                                                                |  20% of 100.9 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 100.9 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 100.9 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 100.9 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 100.9 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 100.9 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 100.9 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 100.9 MiB
+[pool-1-thread-1] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Connected to GitHub with OAuth token
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 100.9 MiB
+[pool-1-thread-1] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing https://github.com/Alluxio/alluxio.git 9aeefcd8120bb3b89cdb437d8c32d2ed84b8a825 ...
+[pool-1-thread-1] INFO org.refactoringminer.astDiff.matchers.ProjectASTDiffer - ModelDiff.getRefactorings() execution time: 0 seconds
+[pool-1-thread-1] INFO org.refactoringminer.astDiff.matchers.ProjectASTDiffer - Diff execution: 0 seconds
+[pool-1-thread-1] INFO org.refactoringminer.astDiff.matchers.ProjectASTDiffer - EditScript execution: 0 seconds
+[pool-1-thread-1] INFO org.refactoringminer.astDiff.matchers.ProjectASTDiffer - MovedDiff execution: 0 seconds
+[main] INFO spark.staticfiles.StaticFilesConfiguration - StaticResourceHandler configured with folder = /web/
+[Thread-0] INFO org.eclipse.jetty.util.log - Logging initialized @3711ms to org.eclipse.jetty.util.log.Slf4jLog
+[Thread-0] INFO spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
+[Thread-0] INFO spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:6789
+[Thread-0] INFO org.eclipse.jetty.server.Server - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 17.0.14+7-alpine-r0
+[Thread-0] INFO org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+[Thread-0] INFO org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+[Thread-0] INFO org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+[Thread-0] INFO org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@7fe980e2{HTTP/1.1, (http/1.1)}{0.0.0.0:6789}
+[Thread-0] INFO org.eclipse.jetty.server.Server - Started @3803ms
+Starting server: http://127.0.0.1:6789.
+Chromium Headless Shell 134.0.6998.35 (playwright build v1161) downloaded to /home/runner/.cache/ms-playwright/chromium_headless_shell-1161
+Downloading Firefox 135.0 (playwright build v1475) from https://cdn.playwright.dev/dbazure/download/playwright/builds/firefox/1475/firefox-ubuntu-24.04.zip
+[Thread-9] INFO spark.embeddedserver.jetty.EmbeddedJettyServer - >>> Spark shutting down ...
+[Thread-9] INFO org.eclipse.jetty.server.AbstractConnector - Stopped ServerConnector@7fe980e2{HTTP/1.1, (http/1.1)}{0.0.0.0:6789}
+[Thread-9] INFO org.eclipse.jetty.server.session - node0 Stopped scavenging
+[Thread-9] INFO spark.embeddedserver.jetty.EmbeddedJettyServer - done
+Archive:  /opt/refactoringminer/lib/RefactoringMiner-DockerBuild.jar
+   creating: META-INF/
+  inflating: META-INF/MANIFEST.MF
+   creating: gui/
+  inflating: gui/RunWithGitHubAPI.class
+  inflating: gui/RunWithLocallyClonedRepository.class
+   creating: gui/webdiff/
+   creating: gui/webdiff/rest/
+  inflating: gui/webdiff/rest/AbstractMenuBar.class
+   creating: gui/webdiff/dir/
+  inflating: gui/webdiff/dir/DirectoryDiffView$ModifiedFiles.class
+  inflating: gui/webdiff/dir/DirectoryDiffView$AddedOrDeletedFiles.class
+  inflating: gui/webdiff/dir/DirectoryDiffView$Header.class
+  inflating: gui/webdiff/dir/DirComparator.class
+  inflating: gui/webdiff/dir/DirectoryDiffView.class
+  inflating: gui/webdiff/dir/DirectoryDiffView$MenuBar.class
+   creating: gui/webdiff/tree/
+  inflating: gui/webdiff/tree/TreeNodeInfo.class
+  inflating: gui/webdiff/tree/TreeViewGenerator.class
+  inflating: gui/webdiff/WebDiffRunnerCli$1.class
+   creating: gui/webdiff/export/
+  inflating: gui/webdiff/export/WebExporter$1.class
+  inflating: gui/webdiff/export/WebExporter.class
+  inflating: gui/webdiff/WebDiffRunnerCli$RunMode.class
+  inflating: gui/webdiff/WebDiff.class
+  inflating: gui/webdiff/WebDiffRunnerCli.class
+   creating: gui/webdiff/viewers/
+   creating: gui/webdiff/viewers/monaco/
+  inflating: gui/webdiff/viewers/monaco/MonacoCore.class
+  inflating: gui/webdiff/viewers/monaco/MonacoView.class
+  inflating: gui/webdiff/viewers/monaco/MonacoView$1.class
+  inflating: gui/webdiff/viewers/monaco/MonacoView$Header.class
+  inflating: gui/webdiff/viewers/AbstractDiffView.class
+   creating: gui/webdiff/viewers/vanilla/
+  inflating: gui/webdiff/viewers/vanilla/VanillaDiffView$1.class
+  inflating: gui/webdiff/viewers/vanilla/VanillaDiffHtmlBuilder.class
+  inflating: gui/webdiff/viewers/vanilla/VanillaDiffView.class
+  inflating: gui/webdiff/viewers/vanilla/VanillaDiffHtmlBuilder$TagIndex.class
+  inflating: gui/webdiff/viewers/vanilla/VanillaDiffView$Header.class
+   creating: gui/webdiff/viewers/spv/
+  inflating: gui/webdiff/viewers/spv/SinglePageViewWithIFrame.class
+  inflating: gui/webdiff/viewers/spv/SinglePageView.class
+  inflating: gui/webdiff/viewers/spv/AbstractSinglePageView.class
+  inflating: gui/RunWithTwoDirectories.class
+  inflating: gui/RunWithPullRequest.class
+   creating: gr/
+   creating: gr/uom/
+   creating: gr/uom/java/
+   creating: gr/uom/java/xmi/
+  inflating: gr/uom/java/xmi/CompositeType.class
+  inflating: gr/uom/java/xmi/UMLClassMatcher$ExtremelyRelaxedRename.class
+  inflating: gr/uom/java/xmi/UMLPackage.class
+  inflating: gr/uom/java/xmi/UMLClassMatcher$Move.class
+  inflating: gr/uom/java/xmi/UMLRecordComponent.class
+  inflating: gr/uom/java/xmi/UMLDocElement.class
+   creating: gr/uom/java/xmi/diff/
+  inflating: gr/uom/java/xmi/diff/RemoveClassAnnotationRefactoring.class
+  inflating: gr/uom/java/xmi/diff/UMLAttributeDiff.class
+  inflating: gr/uom/java/xmi/diff/ModifyMethodAnnotationRefactoring.class
+  inflating: gr/uom/java/xmi/diff/UMLClassSplitDiff.class
+  inflating: gr/uom/java/xmi/diff/ReplaceAnonymousWithClassRefactoring.class
+  inflating: gr/uom/java/xmi/diff/MoveSourceFolderRefactoring.class
+  inflating: gr/uom/java/xmi/diff/UMLClassBaseDiff.class
+  inflating: gr/uom/java/xmi/diff/ChangeClassAccessModifierRefactoring.class|                                                                                |   0% of 90.6 MiB
+
+  inflating: gr/uom/java/xmi/diff/ExtractOperationRefactoring.class
+  inflating: gr/uom/java/xmi/diff/PushDownOperationRefactoring.class
+  inflating: gr/uom/java/xmi/diff/UMLClassMoveDiff.class
+  inflating: gr/uom/java/xmi/diff/CallTree.class
+  inflating: gr/uom/java/xmi/diff/CandidateMergeMethodRefactoring.class
+  inflating: gr/uom/java/xmi/diff/MoveOperationRefactoring.class
+  inflating: gr/uom/java/xmi/diff/ClassMoveComparator.class
+  inflating: gr/uom/java/xmi/diff/ChangeAttributeAccessModifierRefactoring.class
+  inflating: gr/uom/java/xmi/diff/RemoveAttributeModifierRefactoring.class
+  inflating: gr/uom/java/xmi/diff/ReplaceLoopWithPipelineRefactoring.class
+  inflating: gr/uom/java/xmi/diff/InheritanceDetection.class
+  inflating: gr/uom/java/xmi/diff/ExtractAttributeRefactoring.class
+  inflating: gr/uom/java/xmi/diff/UMLAnnotationDiff.class
+  inflating: gr/uom/java/xmi/diff/InlineVariableRefactoring.class
+  inflating: gr/uom/java/xmi/diff/UMLCommentListDiff.class
+  inflating: gr/uom/java/xmi/diff/MoveClassRefactoring.class
+  inflating: gr/uom/java/xmi/diff/LeafMappingProvider.class
+  inflating: gr/uom/java/xmi/diff/ChangeReturnTypeRefactoring.class
+  inflating: gr/uom/java/xmi/diff/ModifyClassAnnotationRefactoring.class
+  inflating: gr/uom/java/xmi/diff/CandidateSplitMethodRefactoring.class
+  inflating: gr/uom/java/xmi/diff/RemoveClassModifierRefactoring.class
+  inflating: gr/uom/java/xmi/diff/RemoveMethodAnnotationRefactoring.class
+  inflating: gr/uom/java/xmi/diff/RemoveVariableAnnotationRefactoring.class
+  inflating: gr/uom/java/xmi/diff/ModifyVariableAnnotationRefactoring.class
+  inflating: gr/uom/java/xmi/diff/PushDownAttributeRefactoring.class
+  inflating: gr/uom/java/xmi/diff/ParameterizeTestRefactoring.class
+  inflating: gr/uom/java/xmi/diff/UMLModelDiff.class
+  inflating: gr/uom/java/xmi/diff/TryWithResourcesRefactoring.class
+  inflating: gr/uom/java/xmi/diff/UMLTypeParameterDiff.class
+  inflating: gr/uom/java/xmi/diff/MergeVariableRefactoring.class
+  inflating: gr/uom/java/xmi/diff/AddAttributeAnnotationRefactoring.class
+  inflating: gr/uom/java/xmi/diff/ReorderParameterRefactoring.class
+  inflating: gr/uom/java/xmi/diff/ClassRenameComparator.class
+  inflating: gr/uom/java/xmi/diff/ReplaceConditionalWithTernaryRefactoring.class
+  inflating: gr/uom/java/xmi/diff/RemoveVariableModifierRefactoring.class
+  inflating: gr/uom/java/xmi/diff/ReplaceGenericWithDiamondRefactoring.class
+  inflating: gr/uom/java/xmi/diff/ChangeTypeDeclarationKindRefactoring.class
+  inflating: gr/uom/java/xmi/diff/SplitPackageRefactoring.class
+  inflating: gr/uom/java/xmi/diff/ModifyAttributeAnnotationRefactoring.class
+  inflating: gr/uom/java/xmi/diff/CodeRange.class
+  inflating: gr/uom/java/xmi/diff/UMLEnumConstantDiff.class
+  inflating: gr/uom/java/xmi/diff/ReplaceAttributeRefactoring.class
+  inflating: gr/uom/java/xmi/diff/UMLImportListDiff.class
+  inflating: gr/uom/java/xmi/diff/UMLTypeListDiff.class
+  inflating: gr/uom/java/xmi/diff/AddClassModifierRefactoring.class
+  inflating: gr/uom/java/xmi/diff/MoveCodeRefactoring.class
+  inflating: gr/uom/java/xmi/diff/UMLClassMergeDiff.class
+  inflating: gr/uom/java/xmi/diff/UMLRealizationDiff.class
+  inflating: gr/uom/java/xmi/diff/UMLAnnotationListDiff.class
+  inflating: gr/uom/java/xmi/diff/RenameClassRefactoring.class
+  inflating: gr/uom/java/xmi/diff/AddVariableModifierRefactoring.class
+  inflating: gr/uom/java/xmi/diff/ReplaceAnonymousWithLambdaRefactoring.class
+  inflating: gr/uom/java/xmi/diff/RemoveParameterRefactoring.class
+  inflating: gr/uom/java/xmi/diff/UMLAnonymousToClassDiff.class
+  inflating: gr/uom/java/xmi/diff/ChangeAttributeTypeRefactoring.class
+  inflating: gr/uom/java/xmi/diff/MappingOptimizer.class
+  inflating: gr/uom/java/xmi/diff/SplitOperationRefactoring.class
+  inflating: gr/uom/java/xmi/diff/StringDistance.class
+  inflating: gr/uom/java/xmi/diff/SplitVariableRefactoring.class
+  inflating: gr/uom/java/xmi/diff/ReplacePipelineWithLoopRefactoring.class
+  inflating: gr/uom/java/xmi/diff/UMLClassRenameDiff.class
+  inflating: gr/uom/java/xmi/diff/ChangeVariableTypeRefactoring.class
+  inflating: gr/uom/java/xmi/diff/ChangeOperationAccessModifierRefactoring.class
+  inflating: gr/uom/java/xmi/diff/MergeClassRefactoring.class
+  inflating: gr/uom/java/xmi/diff/AssertThrowsRefactoring.class
+  inflating: gr/uom/java/xmi/diff/AddThrownExceptionTypeRefactoring.class
+  inflating: gr/uom/java/xmi/diff/RemoveAttributeAnnotationRefactoring.class
+  inflating: gr/uom/java/xmi/diff/RemoveMethodModifierRefactoring.class
+  inflating: gr/uom/java/xmi/diff/AddMethodModifierRefactoring.class
+  inflating: gr/uom/java/xmi/diff/SplitConditionalRefactoring.class
+  inflating: gr/uom/java/xmi/diff/AddClassAnnotationRefactoring.class
+  inflating: gr/uom/java/xmi/diff/UMLParameterDiff.class
+  inflating: gr/uom/java/xmi/diff/MergeCatchRefactoring.class
+  inflating: gr/uom/java/xmi/diff/RenameAttributeRefactoring.class
+  inflating: gr/uom/java/xmi/diff/ChangeThrownExceptionTypeRefactoring.class
+  inflating: gr/uom/java/xmi/diff/CollapseHierarchyRefactoring.class
+  inflating: gr/uom/java/xmi/diff/AddAttributeModifierRefactoring.class
+  inflating: gr/uom/java/xmi/diff/PackageLevelRefactoring.class
+  inflating: gr/uom/java/xmi/diff/UMLJavadocDiff.class
+  inflating: gr/uom/java/xmi/diff/ExtractOperationDetection.class
+  inflating: gr/uom/java/xmi/diff/UMLAnonymousClassDiff.class
+  inflating: gr/uom/java/xmi/diff/PullUpAttributeRefactoring.class
+  inflating: gr/uom/java/xmi/diff/InlineAttributeRefactoring.class
+  inflating: gr/uom/java/xmi/diff/UMLDocumentationDiffProvider.class
+  inflating: gr/uom/java/xmi/diff/MoveCodeRefactoring$Type.class
+  inflating: gr/uom/java/xmi/diff/ExtractSuperclassRefactoring.class
+  inflating: gr/uom/java/xmi/diff/CandidateSplitVariableRefactoring.class
+  inflating: gr/uom/java/xmi/diff/CodeFragmentComparator.class
+  inflating: gr/uom/java/xmi/diff/CallTreeNode.class
+  inflating: gr/uom/java/xmi/diff/UMLClassDiff.class
+  inflating: gr/uom/java/xmi/diff/UMLAbstractClassDiff.class
+  inflating: gr/uom/java/xmi/diff/RenameOperationRefactoring.class
+  inflating: gr/uom/java/xmi/diff/InlineOperationRefactoring.class
+  inflating: gr/uom/java/xmi/diff/InvertConditionRefactoring.class
+  inflating: gr/uom/java/xmi/diff/PullUpOperationRefactoring.class
+  inflating: gr/uom/java/xmi/diff/InlineOperationDetection.class
+  inflating: gr/uom/java/xmi/diff/EncapsulateAttributeRefactoring.class
+  inflating: gr/uom/java/xmi/diff/ExtractClassRefactoring.class
+  inflating: gr/uom/java/xmi/diff/SplitAttributeRefactoring.class
+  inflating: gr/uom/java/xmi/diff/RenameVariableRefactoring.class
+  inflating: gr/uom/java/xmi/diff/RemoveThrownExceptionTypeRefactoring.class
+  inflating: gr/uom/java/xmi/diff/RenamePattern.class
+  inflating: gr/uom/java/xmi/diff/AddMethodAnnotationRefactoring.class
+  inflating: gr/uom/java/xmi/diff/AddParameterRefactoring.class
+  inflating: gr/uom/java/xmi/diff/AssertTimeoutRefactoring.class
+  inflating: gr/uom/java/xmi/diff/CandidateExtractClassRefactoring.class
+  inflating: gr/uom/java/xmi/diff/MovedClassToAnotherSourceFolder.class
+  inflating: gr/uom/java/xmi/diff/UMLGeneralizationDiff.class
+  inflating: gr/uom/java/xmi/diff/SplitClassRefactoring.class
+  inflating: gr/uom/java/xmi/diff/MergeAttributeRefactoring.class
+  inflating: gr/uom/java/xmi/diff/MergeConditionalRefactoring.class
+  inflating: gr/uom/java/xmi/diff/ExtractVariableRefactoring.class
+  inflating: gr/uom/java/xmi/diff/CandidateMergeVariableRefactoring.class
+  inflating: gr/uom/java/xmi/diff/RenamePackageRefactoring.class
+  inflating: gr/uom/java/xmi/diff/UMLOperationDiff.class
+  inflating: gr/uom/java/xmi/diff/MoveAndRenameAttributeRefactoring.class
+  inflating: gr/uom/java/xmi/diff/CandidateAttributeRefactoring.class
+  inflating: gr/uom/java/xmi/diff/AddVariableAnnotationRefactoring.class
+  inflating: gr/uom/java/xmi/diff/MoveAndRenameClassRefactoring.class
+  inflating: gr/uom/java/xmi/diff/MergeOperationRefactoring.class
+  inflating: gr/uom/java/xmi/diff/MoveAttributeRefactoring.class
+  inflating: gr/uom/java/xmi/diff/ReferenceBasedRefactoring.class
+  inflating: gr/uom/java/xmi/diff/MergePackageRefactoring.class
+  inflating: gr/uom/java/xmi/diff/UMLTypeParameterListDiff.class
+  inflating: gr/uom/java/xmi/UMLParameter.class
+  inflating: gr/uom/java/xmi/UMLType.class
+  inflating: gr/uom/java/xmi/UMLAbstractClass.class
+   creating: gr/uom/java/xmi/annotation/
+  inflating: gr/uom/java/xmi/annotation/NormalAnnotation.class
+   creating: gr/uom/java/xmi/annotation/source/
+  inflating: gr/uom/java/xmi/annotation/source/CsvFileSourceAnnotation.class
+  inflating: gr/uom/java/xmi/annotation/source/ValueSourceAnnotation.class
+  inflating: gr/uom/java/xmi/annotation/source/ArgumentsSourceAnnotation.class
+  inflating: gr/uom/java/xmi/annotation/source/EmptySourceAnnotation.class
+  inflating: gr/uom/java/xmi/annotation/source/NullSourceAnnotation.class
+  inflating: gr/uom/java/xmi/annotation/source/NullAndEmptySourceAnnotation.class
+  inflating: gr/uom/java/xmi/annotation/source/EnumSourceAnnotation.class
+  inflating: gr/uom/java/xmi/annotation/source/MethodSourceAnnotation.class
+  inflating: gr/uom/java/xmi/annotation/source/CsvSourceAnnotation.class
+  inflating: gr/uom/java/xmi/annotation/SingleMemberAnnotation.class
+  inflating: gr/uom/java/xmi/annotation/MarkerAnnotation.class
+  inflating: gr/uom/java/xmi/UMLJavadoc.class
+  inflating: gr/uom/java/xmi/UMLEnumConstant.class
+  inflating: gr/uom/java/xmi/UMLClassMatcher$Rename.class
+  inflating: gr/uom/java/xmi/SourceAnnotation.class
+   creating: gr/uom/java/xmi/decomposition/
+  inflating: gr/uom/java/xmi/decomposition/LeafExpression.class
+  inflating: gr/uom/java/xmi/decomposition/ScopedLeafMappingComparatorForExtract.class
+  inflating: gr/uom/java/xmi/decomposition/ScopedCompositeMappingComparatorForExtract.class
+  inflating: gr/uom/java/xmi/decomposition/AbstractCall$StatementCoverageType.class
+  inflating: gr/uom/java/xmi/decomposition/VariableReferenceExtractor.class
+  inflating: gr/uom/java/xmi/decomposition/LeafMapping.class
+  inflating: gr/uom/java/xmi/decomposition/StatementObject.class
+  inflating: gr/uom/java/xmi/decomposition/AbstractStatement.class
+  inflating: gr/uom/java/xmi/decomposition/ReplacementUtil.class
+  inflating: gr/uom/java/xmi/decomposition/TryStatementObject.class
+  inflating: gr/uom/java/xmi/decomposition/AnonymousClassDeclarationObject.class
+  inflating: gr/uom/java/xmi/decomposition/UMLOperationBodyMapperComparator.class
+  inflating: gr/uom/java/xmi/decomposition/MethodReference.class
+  inflating: gr/uom/java/xmi/decomposition/UMLOperationBodyMapper.class
+  inflating: gr/uom/java/xmi/decomposition/CreationReference.class
+  inflating: gr/uom/java/xmi/decomposition/OperationInvocation.class
+  inflating: gr/uom/java/xmi/decomposition/TernaryOperatorExpression.class
+  inflating: gr/uom/java/xmi/decomposition/AbstractExpression.class
+  inflating: gr/uom/java/xmi/decomposition/ReplacementAlgorithm.class
+  inflating: gr/uom/java/xmi/decomposition/LambdaExpressionObject.class
+  inflating: gr/uom/java/xmi/decomposition/OperationBody.class
+  inflating: gr/uom/java/xmi/decomposition/AbstractCodeFragment.class
+  inflating: gr/uom/java/xmi/decomposition/CompositeStatementObject.class
+  inflating: gr/uom/java/xmi/decomposition/ScopedMappingData.class
+  inflating: gr/uom/java/xmi/decomposition/ObjectCreation.class
+  inflating: gr/uom/java/xmi/decomposition/VariableReplacementAnalysis.class
+  inflating: gr/uom/java/xmi/decomposition/ScopedLeafMappingComparatorForInline.class
+  inflating: gr/uom/java/xmi/decomposition/VariableScope.class
+  inflating: gr/uom/java/xmi/decomposition/ASTFlattener.class
+  inflating: gr/uom/java/xmi/decomposition/AbstractCall.class
+  inflating: gr/uom/java/xmi/decomposition/VariableDeclaration.class
+  inflating: gr/uom/java/xmi/decomposition/Visitor.class
+  inflating: gr/uom/java/xmi/decomposition/CompositeStatementObjectMapping.class
+  inflating: gr/uom/java/xmi/decomposition/CodeBlockBetweenComments.class
+  inflating: gr/uom/java/xmi/decomposition/StringBasedHeuristics.class
+   creating: gr/uom/java/xmi/decomposition/replacement/
+  inflating: gr/uom/java/xmi/decomposition/replacement/CompositeReplacement.class
+  inflating: gr/uom/java/xmi/decomposition/replacement/AddVariableReplacement.class
+  inflating: gr/uom/java/xmi/decomposition/replacement/MethodInvocationWithClassInstanceCreationReplacement.class
+  inflating: gr/uom/java/xmi/decomposition/replacement/MergeVariableReplacement.class
+  inflating: gr/uom/java/xmi/decomposition/replacement/SplitVariableReplacement.class
+  inflating: gr/uom/java/xmi/decomposition/replacement/VariableReplacementWithMethodInvocation$Direction.class
+  inflating: gr/uom/java/xmi/decomposition/replacement/SwapArgumentReplacement.class
+  inflating: gr/uom/java/xmi/decomposition/replacement/VariableReplacementWithMethodInvocation.class
+  inflating: gr/uom/java/xmi/decomposition/replacement/Replacement$ReplacementType.class
+  inflating: gr/uom/java/xmi/decomposition/replacement/MethodInvocationReplacement.class
+  inflating: gr/uom/java/xmi/decomposition/replacement/ClassInstanceCreationWithMethodInvocationReplacement.class
+  inflating: gr/uom/java/xmi/decomposition/replacement/IntersectionReplacement.class
+  inflating: gr/uom/java/xmi/decomposition/replacement/ConsistentReplacementDetector.class
+  inflating: gr/uom/java/xmi/decomposition/replacement/VariableDeclarationReplacement.class
+  inflating: gr/uom/java/xmi/decomposition/replacement/ObjectCreationReplacement.class
+  inflating: gr/uom/java/xmi/decomposition/replacement/InitializerReplacement.class
+  inflating: gr/uom/java/xmi/decomposition/replacement/Replacement.class
+  inflating: gr/uom/java/xmi/decomposition/UMLOperationBodyMapper$ReplacementInfo.class
+  inflating: gr/uom/java/xmi/decomposition/AbstractCodeMapping.class
+  inflating: gr/uom/java/xmi/UMLAbstractDocumentation.class
+  inflating: gr/uom/java/xmi/UMLCommentGroup.class
+  inflating: gr/uom/java/xmi/UMLInitializer.class
+  inflating: gr/uom/java/xmi/UMLClassMatcher.class
+  inflating: gr/uom/java/xmi/UMLGeneralization.class
+  inflating: gr/uom/java/xmi/UMLClassMatcher$RelaxedMove.class
+  inflating: gr/uom/java/xmi/UMLComment.class
+  inflating: gr/uom/java/xmi/UMLClassMatcher$RelaxedRename.class
+  inflating: gr/uom/java/xmi/UMLModel.class
+   creating: gr/uom/java/xmi/util/
+  inflating: gr/uom/java/xmi/util/CsvUtils.class
+  inflating: gr/uom/java/xmi/VariableDeclarationProvider.class
+  inflating: gr/uom/java/xmi/WildcardType.class
+  inflating: gr/uom/java/xmi/UMLOperation.class
+  inflating: gr/uom/java/xmi/UMLTagElement.class
+  inflating: gr/uom/java/xmi/VariableDeclarationContainer.class
+  inflating: gr/uom/java/xmi/UMLModifier.class
+  inflating: gr/uom/java/xmi/UMLClassMatcher$ExtremelyRelaxedMove.class
+  inflating: gr/uom/java/xmi/LeafType.class
+  inflating: gr/uom/java/xmi/UMLClass.class
+  inflating: gr/uom/java/xmi/ListCompositeType$Kind.class
+  inflating: gr/uom/java/xmi/UMLTypeParameter.class
+  inflating: gr/uom/java/xmi/AnonymousClassDeclarationVisitor.class
+  inflating: gr/uom/java/xmi/UMLImport.class
+  inflating: gr/uom/java/xmi/UMLClassMatcher$MatchResult.class
+  inflating: gr/uom/java/xmi/UMLModelASTReader.class
+  inflating: gr/uom/java/xmi/UMLAnonymousClass.class
+  inflating: gr/uom/java/xmi/LocationInfo.class
+  inflating: gr/uom/java/xmi/LocationInfoProvider.class
+  inflating: gr/uom/java/xmi/Constants.class
+  inflating: gr/uom/java/xmi/UMLAttribute.class
+  inflating: gr/uom/java/xmi/UMLAnnotation.class
+  inflating: gr/uom/java/xmi/LocationInfo$CodeElementType.class
+  inflating: gr/uom/java/xmi/Visibility.class
+  inflating: gr/uom/java/xmi/ListCompositeType.class
+  inflating: gr/uom/java/xmi/UMLRealization.class
+   creating: org/
+   creating: org/kohsuke/
+   creating: org/kohsuke/github/
+  inflating: org/kohsuke/github/GHRepositoryWrapper.class
+   creating: org/refactoringminer/
+  inflating: org/refactoringminer/RefactoringMiner$3.class
+  inflating: org/refactoringminer/RefactoringMinerHttpServer$MyHandler.class
+  inflating: org/refactoringminer/RefactoringMinerHttpsServer$MyHandler$1.class
+  inflating: org/refactoringminer/RefactoringMiner$5.class
+   creating: org/refactoringminer/util/
+  inflating: org/refactoringminer/util/GitServiceImpl$DefaultCommitsFilter.class
+  inflating: org/refactoringminer/util/ExternalProcess.class
+  inflating: org/refactoringminer/util/PrefixSuffixUtils.class
+  inflating: org/refactoringminer/util/RefactoringRelationship.class
+  inflating: org/refactoringminer/util/AstUtils.class
+  inflating: org/refactoringminer/util/AstUtils$StatementCounter.class
+  inflating: org/refactoringminer/util/RefactoringRelationship$GroupKey.class
+  inflating: org/refactoringminer/util/ExternalProcess$StreamGobbler.class
+  inflating: org/refactoringminer/util/GitServiceImpl.class
+   creating: org/refactoringminer/perforce/
+  inflating: org/refactoringminer/perforce/PerforceHistoryRefactoringMinerImpl.class
+  inflating: org/refactoringminer/perforce/ASTDiffInput.class
+  inflating: org/refactoringminer/perforce/PerforceUtils.class
+  inflating: org/refactoringminer/perforce/PerforceConnectionDetails.class
+  inflating: org/refactoringminer/perforce/PerforceHistoryRefactoringMinerImpl$1.class
+   creating: org/refactoringminer/api/
+  inflating: org/refactoringminer/api/PurityChecker.class
+  inflating: org/refactoringminer/api/RefactoringType$1.class
+  inflating: org/refactoringminer/api/Churn.class
+  inflating: org/refactoringminer/api/GitHistoryRefactoringMiner.class
+  inflating: org/refactoringminer/api/RefactoringMinerTimedOutException.class
+  inflating: org/refactoringminer/api/CodeRangeProvider.class
+  inflating: org/refactoringminer/api/RefactoringType.class
+  inflating: org/refactoringminer/api/Refactoring.class
+  inflating: org/refactoringminer/api/RefactoringHandler.class
+  inflating: org/refactoringminer/api/PurityChecker$1.class
+  inflating: org/refactoringminer/api/PerforceHistoryRefactoringMiner.class
+  inflating: org/refactoringminer/api/PurityChecker$CheckReplacementResult.class
+  inflating: org/refactoringminer/api/PurityChecker$ReplacementJustificationResult.class
+  inflating: org/refactoringminer/api/PurityCheckResult.class
+  inflating: org/refactoringminer/api/GitService.class
+   creating: org/refactoringminer/rm1/
+  inflating: org/refactoringminer/rm1/GitHistoryRefactoringMinerImpl$2.class
+  inflating: org/refactoringminer/rm1/GitHistoryRefactoringMinerImpl$4.class
+  inflating: org/refactoringminer/rm1/GitHistoryRefactoringMinerImpl.class
+  inflating: org/refactoringminer/rm1/GitHistoryRefactoringMinerImpl$3.class
+  inflating: org/refactoringminer/rm1/GitHistoryRefactoringMinerImpl$ChangedFileInfo.class
+  inflating: org/refactoringminer/rm1/GitHistoryRefactoringMinerImpl$1.class
+  inflating: org/refactoringminer/RefactoringMinerHttpsServer.class
+  inflating: org/refactoringminer/RefactoringMinerHttpServer.class
+  inflating: org/refactoringminer/RefactoringMiner$2.class
+  inflating: org/refactoringminer/RefactoringMiner.class
+  inflating: org/refactoringminer/RefactoringMiner$1.class
+  inflating: org/refactoringminer/RefactoringMinerHttpServer$MyHandler$1.class
+  inflating: org/refactoringminer/RefactoringMiner$6.class
+  inflating: org/refactoringminer/RefactoringMiner$4.class
+  inflating: org/refactoringminer/RefactoringMinerHttpsServer$1.class
+  inflating: org/refactoringminer/RefactoringMinerHttpsServer$MyHandler.class
+   creating: org/refactoringminer/astDiff/
+   creating: org/refactoringminer/astDiff/models/
+  inflating: org/refactoringminer/astDiff/models/ProjectASTDiff.class
+  inflating: org/refactoringminer/astDiff/models/ExtendedMultiMappingStore.class
+  inflating: org/refactoringminer/astDiff/models/ASTDiff.class
+  inflating: org/refactoringminer/astDiff/models/OptimizationData.class
+   creating: org/refactoringminer/astDiff/utils/
+  inflating: org/refactoringminer/astDiff/utils/URLHelper.class
+  inflating: org/refactoringminer/astDiff/utils/MappingExportModel.class
+  inflating: org/refactoringminer/astDiff/utils/ExportUtils.class
+  inflating: org/refactoringminer/astDiff/utils/TreeUtilFunctions.class
+  inflating: org/refactoringminer/astDiff/utils/Helpers.class
+  inflating: org/refactoringminer/astDiff/utils/Constants.class
+   creating: org/refactoringminer/astDiff/matchers/
+  inflating: org/refactoringminer/astDiff/matchers/TreeMatcher.class
+   creating: org/refactoringminer/astDiff/matchers/vanilla/
+  inflating: org/refactoringminer/astDiff/matchers/vanilla/CustomTopDownMatcher$AbsoluteOffsetComparator.class
+  inflating: org/refactoringminer/astDiff/matchers/vanilla/MissingIdenticalNonAmbiguousSubtrees.class
+  inflating: org/refactoringminer/astDiff/matchers/vanilla/CustomTopDownMatcher$ExtendedFullMappingComparator.class
+  inflating: org/refactoringminer/astDiff/matchers/vanilla/CustomBottomUpMatcher.class
+  inflating: org/refactoringminer/astDiff/matchers/vanilla/CustomTopDownMatcher.class
+   creating: org/refactoringminer/astDiff/matchers/wrappers/
+  inflating: org/refactoringminer/astDiff/matchers/wrappers/ASTDiffMappingOptimizer.class
+  inflating: org/refactoringminer/astDiff/matchers/wrappers/RefactoringMatcher.class
+  inflating: org/refactoringminer/astDiff/matchers/wrappers/ClassDeclarationMatcher.class
+  inflating: org/refactoringminer/astDiff/matchers/wrappers/MethodMatcher.class
+  inflating: org/refactoringminer/astDiff/matchers/wrappers/PackageDeclarationMatcher.class
+  inflating: org/refactoringminer/astDiff/matchers/wrappers/RefactoringMatcher$1.class
+  inflating: org/refactoringminer/astDiff/matchers/wrappers/CommentMatcher.class
+  inflating: org/refactoringminer/astDiff/matchers/wrappers/FieldDeclarationMatcher.class
+  inflating: org/refactoringminer/astDiff/matchers/wrappers/UnifiedModelDiffRefactoringsMatcher.class
+  inflating: org/refactoringminer/astDiff/matchers/wrappers/JavaDocMatcher.class
+  inflating: org/refactoringminer/astDiff/matchers/wrappers/AnonymousClassDiffMatcher.class
+  inflating: org/refactoringminer/astDiff/matchers/wrappers/ModelDiffRefactoringsForClassDiffMatcher.class
+  inflating: org/refactoringminer/astDiff/matchers/wrappers/ClassDiffMatcher.class
+  inflating: org/refactoringminer/astDiff/matchers/wrappers/ClassAttrMatcher.class
+  inflating: org/refactoringminer/astDiff/matchers/wrappers/FieldDeclarationByAttrDiffMatcher.class
+  inflating: org/refactoringminer/astDiff/matchers/wrappers/BodyMapperMatcher.class
+  inflating: org/refactoringminer/astDiff/matchers/wrappers/EnumConstantsMatcher.class
+  inflating: org/refactoringminer/astDiff/matchers/wrappers/ImportMatcher.class
+  inflating: org/refactoringminer/astDiff/matchers/wrappers/SameModifierMatcher.class
+  inflating: org/refactoringminer/astDiff/matchers/wrappers/OptimizationAwareMatcher.class
+   creating: org/refactoringminer/astDiff/matchers/statement/
+  inflating: org/refactoringminer/astDiff/matchers/statement/BasicTreeMatcher.class
+  inflating: org/refactoringminer/astDiff/matchers/statement/GeneralMatcher.class
+  inflating: org/refactoringminer/astDiff/matchers/statement/LeafMatcher$MoveOptimizedIsomorphic.class
+  inflating: org/refactoringminer/astDiff/matchers/statement/LeafMatcher.class
+  inflating: org/refactoringminer/astDiff/matchers/statement/CompositeMatcher.class
+  inflating: org/refactoringminer/astDiff/matchers/ProjectASTDiffer.class
+   creating: org/refactoringminer/astDiff/actions/
+   creating: org/refactoringminer/astDiff/actions/model/
+  inflating: org/refactoringminer/astDiff/actions/model/MoveIn.class
+  inflating: org/refactoringminer/astDiff/actions/model/MoveOut.class
+  inflating: org/refactoringminer/astDiff/actions/model/MultiMove.class
+   creating: org/refactoringminer/astDiff/actions/editscript/
+  inflating: org/refactoringminer/astDiff/actions/editscript/ExtendedEditScriptGenerator.class
+  inflating: org/refactoringminer/astDiff/actions/editscript/SimplifiedExtendedChawatheScriptGenerator.class
+  inflating: org/refactoringminer/astDiff/actions/editscript/MultiMoveActionGenerator.class
+  inflating: org/refactoringminer/astDiff/actions/editscript/SimplifiedMultiMoveActionGenerator.class
+  inflating: org/refactoringminer/astDiff/actions/editscript/ExtendedChawatheScriptGenerator.class
+   creating: org/refactoringminer/astDiff/actions/classifier/
+  inflating: org/refactoringminer/astDiff/actions/classifier/ExtendedOnlyRootsClassifier.class
+  inflating: org/refactoringminer/astDiff/actions/classifier/ExtendedAbstractITreeClassifier.class
+  inflating: org/refactoringminer/astDiff/actions/classifier/ExtendedTreeClassifier.class
+   creating: org/refactoringminer/astDiff/visitors/
+  inflating: org/refactoringminer/astDiff/visitors/JdtWithCommentsVisitor$CommentsVisitor.class
+  inflating: org/refactoringminer/astDiff/visitors/JdtVisitor$PosAndLength.class
+  inflating: org/refactoringminer/astDiff/visitors/JdtWithCommentsVisitor.class
+  inflating: org/refactoringminer/astDiff/visitors/JdtVisitor.class
+   creating: org/refactoringminer/astDiff/moved/
+  inflating: org/refactoringminer/astDiff/moved/AllSubTreesMovedASTDiffGenerator.class
+  inflating: org/refactoringminer/astDiff/moved/MovedASTDiffGenerator.class
+  inflating: org/refactoringminer/astDiff/moved/MovedDeclarationGenerator.class
+   creating: web/
+   creating: web/monaco/
+   creating: web/monaco/min/
+   creating: web/monaco/min/vs/
+   creating: web/monaco/min/vs/language/
+   creating: web/monaco/min/vs/language/json/
+  inflating: web/monaco/min/vs/language/json/jsonWorker.js
+  inflating: web/monaco/min/vs/language/json/jsonMode.js
+   creating: web/monaco/min/vs/language/html/
+  inflating: web/monaco/min/vs/language/html/htmlMode.js
+  inflating: web/monaco/min/vs/language/html/htmlWorker.js
+   creating: web/monaco/min/vs/language/css/
+  inflating: web/monaco/min/vs/language/css/cssWorker.js
+  inflating: web/monaco/min/vs/language/css/cssMode.js
+   creating: web/monaco/min/vs/language/typescript/
+  inflating: web/monaco/min/vs/language/typescript/tsMode.js
+  inflating: |■■■■■■■■                                                                        |  10% of 90.6 MiB
+web/monaco/min/vs/language/typescript/tsWorker.js
+   creating: web/monaco/min/vs/base/
+   creating: web/monaco/min/vs/base/worker/
+  inflating: web/monaco/min/vs/base/worker/workerMain.js
+   creating: web/monaco/min/vs/base/common/
+   creating: web/monaco/min/vs/base/common/worker/
+  inflating: web/monaco/min/vs/base/common/worker/simpleWorker.nls.js
+   creating: web/monaco/min/vs/base/browser/
+   creating: web/monaco/min/vs/base/browser/ui/
+   creating: web/monaco/min/vs/base/browser/ui/codicons/
+   creating: web/monaco/min/vs/base/browser/ui/codicons/codicon/
+  inflating: web/monaco/min/vs/base/browser/ui/codicons/codicon/codicon.ttf
+   creating: web/monaco/min/vs/basic-languages/
+   creating: web/monaco/min/vs/basic-languages/java/
+  inflating: web/monaco/min/vs/basic-languages/java/java.js
+  inflating: web/monaco/min/vs/loader.js
+   creating: web/monaco/min/vs/editor/
+  inflating: web/monaco/min/vs/editor/editor.main.css
+  inflating: web/monaco/min/vs/editor/editor.main.js
+  inflating: web/monaco/min/vs/editor/editor.main.nls.js|■■■■■■■■■■■■■■■■                                                                |  20% of 90.6 MiB
+
+   creating: web/dist/
+  inflating: web/dist/style.css
+  inflating: web/dist/monaco.css
+  inflating: web/dist/icons8-file-folder-opened.svg
+  inflating: web/dist/file-transfer.svg
+  inflating: web/dist/vanilla.css
+  inflating: web/dist/monaco-native.js
+  inflating: web/dist/monaco.js
+  inflating: web/dist/vanilla.js
+  inflating: web/dist/folding.js
+  inflating: web/dist/utils.js
+  inflating: web/dist/decorations.js
+  inflating: web/dist/shortcuts.js
+  inflating: web/dist/icons8-file-folder-closed.svg
+  inflating: web/dist/single.js
+  inflating: web/dist/icons8-file-edit.svg
+  inflating: web/dist/icons8-file-move.svg
+  inflating: web/dist/single.css
+|■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 90.6 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 90.6 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 90.6 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 90.6 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 90.6 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 90.6 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 90.6 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 90.6 MiB
+[command]/opt/hostedtoolcache/node/20.19.0/x64/bin/npx playwright install
+Firefox 135.0 (playwright build v1475) downloaded to /home/runner/.cache/ms-playwright/firefox-1475
+Downloading Webkit 18.4 (playwright build v2140) from https://cdn.playwright.dev/dbazure/download/playwright/builds/webkit/2140/webkit-ubuntu-24.04.zip
+|                                                                                |   0% of 92 MiB
+|■■■■■■■■                                                                        |  10% of 92 MiB
+|■■■■■■■■■■■■■■■■                                                                |  20% of 92 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 92 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 92 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 92 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 92 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 92 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 92 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 92 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 92 MiB
+Webkit 18.4 (playwright build v2140) downloaded to /home/runner/.cache/ms-playwright/webkit-2140
+Downloading FFMPEG playwright build v1011 from https://cdn.playwright.dev/dbazure/download/playwright/builds/ffmpeg/1011/ffmpeg-linux.zip
+|                                                                                |   0% of 2.3 MiB
+|■■■■■■■■                                                                        |  10% of 2.3 MiB
+|■■■■■■■■■■■■■■■■                                                                |  20% of 2.3 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 2.3 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 2.3 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 2.3 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 2.3 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 2.3 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 2.3 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 2.3 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 2.3 MiB
+FFMPEG playwright build v1011 downloaded to /home/runner/.cache/ms-playwright/ffmpeg-1011
+Playwright Host validation warning: 
+╔══════════════════════════════════════════════════════╗
+║ Host system is missing dependencies to run browsers. ║
+║ Missing libraries:                                   ║
+║     libgtk-4.so.1                                    ║
+║     libgraphene-1.0.so.0                             ║
+║     libwoff2dec.so.1.0.2                             ║
+║     libvpx.so.9                                      ║
+║     libevent-2.1.so.7                                ║
+║     libopus.so.0                                     ║
+║     libgstallocators-1.0.so.0                        ║
+║     libgstapp-1.0.so.0                               ║
+║     libgstpbutils-1.0.so.0                           ║
+║     libgstaudio-1.0.so.0                             ║
+║     libgstgl-1.0.so.0                                ║
+║     libgsttag-1.0.so.0                               ║
+║     libgstvideo-1.0.so.0                             ║
+║     libgstcodecparsers-1.0.so.0                      ║
+║     libgstfft-1.0.so.0                               ║
+║     libflite.so.1                                    ║
+║     libflite_usenglish.so.1                          ║
+║     libflite_cmu_grapheme_lang.so.1                  ║
+║     libflite_cmu_grapheme_lex.so.1                   ║
+║     libflite_cmu_indic_lang.so.1                     ║
+║     libflite_cmu_indic_lex.so.1                      ║
+║     libflite_cmulex.so.1                             ║
+║     libflite_cmu_time_awb.so.1                       ║
+║     libflite_cmu_us_awb.so.1                         ║
+║     libflite_cmu_us_kal16.so.1                       ║
+║     libflite_cmu_us_kal.so.1                         ║
+║     libflite_cmu_us_rms.so.1                         ║
+║     libflite_cmu_us_slt.so.1                         ║
+║     libavif.so.16                                    ║
+║     libharfbuzz-icu.so.0                             ║
+║     libsecret-1.so.0                                 ║
+║     libhyphen.so.0                                   ║
+║     libmanette-0.2.so.0                              ║
+║     libGLESv2.so.2                                   ║
+║     libx264.so                                       ║
+╚══════════════════════════════════════════════════════╝
+    at validateDependenciesLinux (/home/runner/work/Refactoringminer-Astdiff-Exporter/Refactoringminer-Astdiff-Exporter/node_modules/playwright-core/lib/server/registry/dependencies.js:216:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Registry._validateHostRequirements (/home/runner/work/Refactoringminer-Astdiff-Exporter/Refactoringminer-Astdiff-Exporter/node_modules/playwright-core/lib/server/registry/index.js:859:52)
+    at async Registry._validateHostRequirementsForExecutableIfNeeded (/home/runner/work/Refactoringminer-Astdiff-Exporter/Refactoringminer-Astdiff-Exporter/node_modules/playwright-core/lib/server/registry/index.js:957:7)
+    at async Registry.validateHostRequirementsForExecutablesIfNeeded (/home/runner/work/Refactoringminer-Astdiff-Exporter/Refactoringminer-Astdiff-Exporter/node_modules/playwright-core/lib/server/registry/index.js:946:43)
+    at async t.<anonymous> (/home/runner/work/Refactoringminer-Astdiff-Exporter/Refactoringminer-Astdiff-Exporter/node_modules/playwright-core/lib/cli/program.js:122:7)
+Playwright Host validation warning: 
+╔══════════════════════════════════════════════════════╗
+║ Host system is missing dependencies to run browsers. ║
+║ Missing libraries:                                   ║
+║     libgtk-4.so.1                                    ║
+║     libgraphene-1.0.so.0                             ║
+║     libwoff2dec.so.1.0.2                             ║
+║     libvpx.so.9                                      ║
+║     libevent-2.1.so.7                                ║
+║     libopus.so.0                                     ║
+║     libgstallocators-1.0.so.0                        ║
+║     libgstapp-1.0.so.0                               ║
+║     libgstpbutils-1.0.so.0                           ║
+║     libgstaudio-1.0.so.0                             ║
+║     libgstgl-1.0.so.0                                ║
+║     libgsttag-1.0.so.0                               ║
+║     libgstvideo-1.0.so.0                             ║
+║     libgstcodecparsers-1.0.so.0                      ║
+║     libgstfft-1.0.so.0                               ║
+║     libflite.so.1                                    ║
+║     libflite_usenglish.so.1                          ║
+║     libflite_cmu_grapheme_lang.so.1                  ║
+║     libflite_cmu_grapheme_lex.so.1                   ║
+║     libflite_cmu_indic_lang.so.1                     ║
+║     libflite_cmu_indic_lex.so.1                      ║
+║     libflite_cmulex.so.1                             ║
+║     libflite_cmu_time_awb.so.1                       ║
+║     libflite_cmu_us_awb.so.1                         ║
+║     libflite_cmu_us_kal16.so.1                       ║
+║     libflite_cmu_us_kal.so.1                         ║
+║     libflite_cmu_us_rms.so.1                         ║
+║     libflite_cmu_us_slt.so.1                         ║
+║     libavif.so.16                                    ║
+║     libharfbuzz-icu.so.0                             ║
+║     libsecret-1.so.0                                 ║
+║     libhyphen.so.0                                   ║
+║     libmanette-0.2.so.0                              ║
+║     libGLESv2.so.2                                   ║
+║     libx264.so                                       ║
+╚══════════════════════════════════════════════════════╝
+    at validateDependenciesLinux (/home/runner/work/Refactoringminer-Astdiff-Exporter/Refactoringminer-Astdiff-Exporter/node_modules/playwright-core/lib/server/registry/dependencies.js:216:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Registry._validateHostRequirements (/home/runner/work/Refactoringminer-Astdiff-Exporter/Refactoringminer-Astdiff-Exporter/node_modules/playwright-core/lib/server/registry/index.js:859:52)
+    at async Registry._validateHostRequirementsForExecutableIfNeeded (/home/runner/work/Refactoringminer-Astdiff-Exporter/Refactoringminer-Astdiff-Exporter/node_modules/playwright-core/lib/server/registry/index.js:957:7)
+    at async Registry.validateHostRequirementsForExecutablesIfNeeded (/home/runner/work/Refactoringminer-Astdiff-Exporter/Refactoringminer-Astdiff-Exporter/node_modules/playwright-core/lib/server/registry/index.js:946:43)
+    at async t.<anonymous> (/home/runner/work/Refactoringminer-Astdiff-Exporter/Refactoringminer-Astdiff-Exporter/node_modules/playwright-core/lib/cli/program.js:122:7)
+[command]/usr/bin/docker pull tsantalis/refactoringminer:latest
+(node:2078) [DEP0147] DeprecationWarning: In future versions of Node.js, fs.rmdir(path, { recursive: true }) will be removed. Use fs.rm(path, { recursive: true }) instead
+(Use `node --trace-deprecation ...` to show where the warning was created)
+PASS tests/screenshot.test.js (26.53 s)
+  ● Console
+
+    console.log
+      Calling takeScreenshots
+
+      at Object.log (tests/screenshot.test.js:27:15)
+
+    console.log
+      Reading info.json...
+
+      at log (src/utils/diffFinder.js:6:13)
+
+    console.log
+      Matching IDs: [ 0 ]
+
+      at log (src/utils/diffFinder.js:18:13)
+
+    console.log
+      Launching browser...
+
+      at log (src/utils/screenshot.js:25:13)
+
+    console.log
+      Browser launched.
+
+      at log (src/utils/screenshot.js:29:17)
+
+    console.log
+      Navigating to: file:///home/runner/work/Refactoringminer-Astdiff-Exporter/Refactoringminer-Astdiff-Exporter/resources/test/alluxio9aeefcd8120bb3b89cdb437d8c32d2ed84b8a825/artifact//web/monaco-page/0/index.html
+
+      at log (src/utils/screenshot.js:44:17)
+
+    console.log
+      Saved screenshot: /home/runner/work/Refactoringminer-Astdiff-Exporter/Refactoringminer-Astdiff-Exporter/out/alluxio9aeefcd8120bb3b89cdb437d8c32d2ed84b8a825/screenshots/1.png
+
+      at log (src/utils/screenshot.js:49:17)
+
+    console.log
+      SSIM Score: 0.587147514720147
+
+      at log (src/utils/imgUtil.js:11:13)
+
+    console.log
+      ✅ Images are very similar with SSIM score:  0.587147514720147
+
+      at log (src/utils/imgUtil.js:14:17)
+
+latest: Pulling from tsantalis/refactoringminer
+Digest: sha256:a69df8265412b75e1a97efb9a142933f558a2474fa1eb78d69d279bb9b170124
+Status: Image is up to date for tsantalis/refactoringminer:latest
+docker.io/tsantalis/refactoringminer:latest
+[command]/usr/bin/docker run --env OAuthToken=MASKED_TOKEN -v /home/runner/work/Refactoringminer-Astdiff-Exporter/Refactoringminer-Astdiff-Exporter/exportedFromDocker:/diff/exported --entrypoint /bin/sh tsantalis/refactoringminer:latest -c refactoringminer diff --url https://github.com/apache/kafka/commit/d171ff08a70f9fa8065e6661fcc1f3da092d7faf -e &&           unzip /opt/refactoringminer/lib/RefactoringMiner-DockerBuild.jar -d /tmp/refactoringminer &&           mkdir -p /diff/exported/web &&           cp -r /tmp/refactoringminer/web /diff/exported/web/resources
+[pool-1-thread-1] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Connected to GitHub with OAuth token
+[pool-1-thread-1] INFO org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl - Processing https://github.com/apache/kafka.git d171ff08a70f9fa8065e6661fcc1f3da092d7faf ...
+[pool-1-thread-1] INFO org.refactoringminer.astDiff.matchers.ProjectASTDiffer - ModelDiff.getRefactorings() execution time: 0 seconds
+Cannot invoke "com.github.gumtreediff.tree.Tree.getType()" because the return value of "com.github.gumtreediff.tree.Tree.getParent()" is null
+[pool-1-thread-1] INFO org.refactoringminer.astDiff.matchers.ProjectASTDiffer - Diff execution: 1 seconds
+[pool-1-thread-1] INFO org.refactoringminer.astDiff.matchers.ProjectASTDiffer - EditScript execution: 0 seconds
+[pool-1-thread-1] INFO org.refactoringminer.astDiff.matchers.ProjectASTDiffer - MovedDiff execution: 0 seconds
+[main] INFO spark.staticfiles.StaticFilesConfiguration - StaticResourceHandler configured with folder = /web/
+[Thread-0] INFO org.eclipse.jetty.util.log - Logging initialized @19323ms to org.eclipse.jetty.util.log.Slf4jLog
+[Thread-0] INFO spark.embeddedserver.jetty.EmbeddedJettyServer - == Spark has ignited ...
+[Thread-0] INFO spark.embeddedserver.jetty.EmbeddedJettyServer - >> Listening on 0.0.0.0:6789
+[Thread-0] INFO org.eclipse.jetty.server.Server - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 17.0.14+7-alpine-r0
+[Thread-0] INFO org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+[Thread-0] INFO org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+[Thread-0] INFO org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+[Thread-0] INFO org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@4251c54e{HTTP/1.1, (http/1.1)}{0.0.0.0:6789}
+[Thread-0] INFO org.eclipse.jetty.server.Server - Started @19384ms
+Starting server: http://127.0.0.1:6789.
+[Thread-9] INFO spark.embeddedserver.jetty.EmbeddedJettyServer - >>> Spark shutting down ...
+[Thread-9] INFO org.eclipse.jetty.server.AbstractConnector - Stopped ServerConnector@4251c54e{HTTP/1.1, (http/1.1)}{0.0.0.0:6789}
+[Thread-9] INFO org.eclipse.jetty.server.session - node0 Stopped scavenging
+[Thread-9] INFO spark.embeddedserver.jetty.EmbeddedJettyServer - done
+Archive:  /opt/refactoringminer/lib/RefactoringMiner-DockerBuild.jar
+   creating: META-INF/
+  inflating: META-INF/MANIFEST.MF
+   creating: gui/
+  inflating: gui/RunWithGitHubAPI.class
+  inflating: gui/RunWithLocallyClonedRepository.class
+   creating: gui/webdiff/
+   creating: gui/webdiff/rest/
+  inflating: gui/webdiff/rest/AbstractMenuBar.class
+   creating: gui/webdiff/dir/
+  inflating: gui/webdiff/dir/DirectoryDiffView$ModifiedFiles.class
+  inflating: gui/webdiff/dir/DirectoryDiffView$AddedOrDeletedFiles.class
+  inflating: gui/webdiff/dir/DirectoryDiffView$Header.class
+  inflating: gui/webdiff/dir/DirComparator.class
+  inflating: gui/webdiff/dir/DirectoryDiffView.class
+  inflating: gui/webdiff/dir/DirectoryDiffView$MenuBar.class
+   creating: gui/webdiff/tree/
+  inflating: gui/webdiff/tree/TreeNodeInfo.class
+  inflating: gui/webdiff/tree/TreeViewGenerator.class
+  inflating: gui/webdiff/WebDiffRunnerCli$1.class
+   creating: gui/webdiff/export/
+  inflating: gui/webdiff/export/WebExporter$1.class
+  inflating: gui/webdiff/export/WebExporter.class
+  inflating: gui/webdiff/WebDiffRunnerCli$RunMode.class
+  inflating: gui/webdiff/WebDiff.class
+  inflating: gui/webdiff/WebDiffRunnerCli.class
+   creating: gui/webdiff/viewers/
+   creating: gui/webdiff/viewers/monaco/
+  inflating: gui/webdiff/viewers/monaco/MonacoCore.class
+  inflating: gui/webdiff/viewers/monaco/MonacoView.class
+  inflating: gui/webdiff/viewers/monaco/MonacoView$1.class
+  inflating: gui/webdiff/viewers/monaco/MonacoView$Header.class
+  inflating: gui/webdiff/viewers/AbstractDiffView.class
+   creating: gui/webdiff/viewers/vanilla/
+  inflating: gui/webdiff/viewers/vanilla/VanillaDiffView$1.class
+  inflating: gui/webdiff/viewers/vanilla/VanillaDiffHtmlBuilder.class
+  inflating: gui/webdiff/viewers/vanilla/VanillaDiffView.class
+  inflating: gui/webdiff/viewers/vanilla/VanillaDiffHtmlBuilder$TagIndex.class
+  inflating: gui/webdiff/viewers/vanilla/VanillaDiffView$Header.class
+   creating: gui/webdiff/viewers/spv/
+  inflating: gui/webdiff/viewers/spv/SinglePageViewWithIFrame.class
+  inflating: gui/webdiff/viewers/spv/SinglePageView.class
+  inflating: gui/webdiff/viewers/spv/AbstractSinglePageView.class
+  inflating: gui/RunWithTwoDirectories.class
+  inflating: gui/RunWithPullRequest.class
+   creating: gr/
+   creating: gr/uom/
+   creating: gr/uom/java/
+   creating: gr/uom/java/xmi/
+  inflating: gr/uom/java/xmi/CompositeType.class
+  inflating: gr/uom/java/xmi/UMLClassMatcher$ExtremelyRelaxedRename.class
+  inflating: gr/uom/java/xmi/UMLPackage.class
+  inflating: gr/uom/java/xmi/UMLClassMatcher$Move.class
+  inflating: gr/uom/java/xmi/UMLRecordComponent.class
+  inflating: gr/uom/java/xmi/UMLDocElement.class
+   creating: gr/uom/java/xmi/diff/
+  inflating: gr/uom/java/xmi/diff/RemoveClassAnnotationRefactoring.class
+  inflating: gr/uom/java/xmi/diff/UMLAttributeDiff.class
+  inflating: gr/uom/java/xmi/diff/ModifyMethodAnnotationRefactoring.class
+  inflating: gr/uom/java/xmi/diff/UMLClassSplitDiff.class
+  inflating: gr/uom/java/xmi/diff/ReplaceAnonymousWithClassRefactoring.class
+  inflating: gr/uom/java/xmi/diff/MoveSourceFolderRefactoring.class
+  inflating: gr/uom/java/xmi/diff/UMLClassBaseDiff.class
+  inflating: gr/uom/java/xmi/diff/ChangeClassAccessModifierRefactoring.class
+  inflating: gr/uom/java/xmi/diff/ExtractOperationRefactoring.class
+  inflating: gr/uom/java/xmi/diff/PushDownOperationRefactoring.class
+  inflating: gr/uom/java/xmi/diff/UMLClassMoveDiff.class
+  inflating: gr/uom/java/xmi/diff/CallTree.class
+  inflating: gr/uom/java/xmi/diff/CandidateMergeMethodRefactoring.class
+  inflating: gr/uom/java/xmi/diff/MoveOperationRefactoring.class
+  inflating: gr/uom/java/xmi/diff/ClassMoveComparator.class
+  inflating: gr/uom/java/xmi/diff/ChangeAttributeAccessModifierRefactoring.class
+  inflating: gr/uom/java/xmi/diff/RemoveAttributeModifierRefactoring.class
+  inflating: gr/uom/java/xmi/diff/ReplaceLoopWithPipelineRefactoring.class
+  inflating: gr/uom/java/xmi/diff/InheritanceDetection.class
+  inflating: gr/uom/java/xmi/diff/ExtractAttributeRefactoring.class
+  inflating: gr/uom/java/xmi/diff/UMLAnnotationDiff.class
+  inflating: gr/uom/java/xmi/diff/InlineVariableRefactoring.class
+  inflating: gr/uom/java/xmi/diff/UMLCommentListDiff.class
+  inflating: gr/uom/java/xmi/diff/MoveClassRefactoring.class
+  inflating: gr/uom/java/xmi/diff/LeafMappingProvider.class
+  inflating: gr/uom/java/xmi/diff/ChangeReturnTypeRefactoring.class
+  inflating: gr/uom/java/xmi/diff/ModifyClassAnnotationRefactoring.class
+  inflating: gr/uom/java/xmi/diff/CandidateSplitMethodRefactoring.class
+  inflating: gr/uom/java/xmi/diff/RemoveClassModifierRefactoring.class
+  inflating: gr/uom/java/xmi/diff/RemoveMethodAnnotationRefactoring.class
+  inflating: gr/uom/java/xmi/diff/RemoveVariableAnnotationRefactoring.class
+  inflating: gr/uom/java/xmi/diff/ModifyVariableAnnotationRefactoring.class
+  inflating: gr/uom/java/xmi/diff/PushDownAttributeRefactoring.class
+  inflating: gr/uom/java/xmi/diff/ParameterizeTestRefactoring.class
+  inflating: gr/uom/java/xmi/diff/UMLModelDiff.class
+  inflating: gr/uom/java/xmi/diff/TryWithResourcesRefactoring.class
+  inflating: gr/uom/java/xmi/diff/UMLTypeParameterDiff.class
+  inflating: gr/uom/java/xmi/diff/MergeVariableRefactoring.class
+  inflating: gr/uom/java/xmi/diff/AddAttributeAnnotationRefactoring.class
+  inflating: gr/uom/java/xmi/diff/ReorderParameterRefactoring.class
+  inflating: gr/uom/java/xmi/diff/ClassRenameComparator.class
+  inflating: gr/uom/java/xmi/diff/ReplaceConditionalWithTernaryRefactoring.class
+  inflating: gr/uom/java/xmi/diff/RemoveVariableModifierRefactoring.class
+  inflating: gr/uom/java/xmi/diff/ReplaceGenericWithDiamondRefactoring.class
+  inflating: gr/uom/java/xmi/diff/ChangeTypeDeclarationKindRefactoring.class
+  inflating: gr/uom/java/xmi/diff/SplitPackageRefactoring.class
+  inflating: gr/uom/java/xmi/diff/ModifyAttributeAnnotationRefactoring.class
+  inflating: gr/uom/java/xmi/diff/CodeRange.class
+  inflating: gr/uom/java/xmi/diff/UMLEnumConstantDiff.class
+  inflating: gr/uom/java/xmi/diff/ReplaceAttributeRefactoring.class
+  inflating: gr/uom/java/xmi/diff/UMLImportListDiff.class
+  inflating: gr/uom/java/xmi/diff/UMLTypeListDiff.class
+  inflating: gr/uom/java/xmi/diff/AddClassModifierRefactoring.class
+  inflating: gr/uom/java/xmi/diff/MoveCodeRefactoring.class
+  inflating: gr/uom/java/xmi/diff/UMLClassMergeDiff.class
+  inflating: gr/uom/java/xmi/diff/UMLRealizationDiff.class
+  inflating: gr/uom/java/xmi/diff/UMLAnnotationListDiff.class
+  inflating: gr/uom/java/xmi/diff/RenameClassRefactoring.class
+  inflating: gr/uom/java/xmi/diff/AddVariableModifierRefactoring.class
+  inflating: gr/uom/java/xmi/diff/ReplaceAnonymousWithLambdaRefactoring.class
+  inflating: gr/uom/java/xmi/diff/RemoveParameterRefactoring.class
+  inflating: gr/uom/java/xmi/diff/UMLAnonymousToClassDiff.class
+  inflating: gr/uom/java/xmi/diff/ChangeAttributeTypeRefactoring.class
+  inflating: gr/uom/java/xmi/diff/MappingOptimizer.class
+  inflating: gr/uom/java/xmi/diff/SplitOperationRefactoring.class
+  inflating: gr/uom/java/xmi/diff/StringDistance.class
+  inflating: gr/uom/java/xmi/diff/SplitVariableRefactoring.class
+  inflating: gr/uom/java/xmi/diff/ReplacePipelineWithLoopRefactoring.class
+  inflating: gr/uom/java/xmi/diff/UMLClassRenameDiff.class
+  inflating: gr/uom/java/xmi/diff/ChangeVariableTypeRefactoring.class
+  inflating: gr/uom/java/xmi/diff/ChangeOperationAccessModifierRefactoring.class
+  inflating: gr/uom/java/xmi/diff/MergeClassRefactoring.class
+  inflating: gr/uom/java/xmi/diff/AssertThrowsRefactoring.class
+  inflating: gr/uom/java/xmi/diff/AddThrownExceptionTypeRefactoring.class
+  inflating: gr/uom/java/xmi/diff/RemoveAttributeAnnotationRefactoring.class
+  inflating: gr/uom/java/xmi/diff/RemoveMethodModifierRefactoring.class
+  inflating: gr/uom/java/xmi/diff/AddMethodModifierRefactoring.class
+  inflating: gr/uom/java/xmi/diff/SplitConditionalRefactoring.class
+  inflating: gr/uom/java/xmi/diff/AddClassAnnotationRefactoring.class
+  inflating: gr/uom/java/xmi/diff/UMLParameterDiff.class
+  inflating: gr/uom/java/xmi/diff/MergeCatchRefactoring.class
+  inflating: gr/uom/java/xmi/diff/RenameAttributeRefactoring.class
+  inflating: gr/uom/java/xmi/diff/ChangeThrownExceptionTypeRefactoring.class
+  inflating: gr/uom/java/xmi/diff/CollapseHierarchyRefactoring.class
+  inflating: gr/uom/java/xmi/diff/AddAttributeModifierRefactoring.class
+  inflating: gr/uom/java/xmi/diff/PackageLevelRefactoring.class
+  inflating: gr/uom/java/xmi/diff/UMLJavadocDiff.class
+  inflating: gr/uom/java/xmi/diff/ExtractOperationDetection.class
+  inflating: gr/uom/java/xmi/diff/UMLAnonymousClassDiff.class
+  inflating: gr/uom/java/xmi/diff/PullUpAttributeRefactoring.class
+  inflating: gr/uom/java/xmi/diff/InlineAttributeRefactoring.class
+  inflating: gr/uom/java/xmi/diff/UMLDocumentationDiffProvider.class
+  inflating: gr/uom/java/xmi/diff/MoveCodeRefactoring$Type.class
+  inflating: gr/uom/java/xmi/diff/ExtractSuperclassRefactoring.class
+  inflating: gr/uom/java/xmi/diff/CandidateSplitVariableRefactoring.class
+  inflating: gr/uom/java/xmi/diff/CodeFragmentComparator.class
+  inflating: gr/uom/java/xmi/diff/CallTreeNode.class
+  inflating: gr/uom/java/xmi/diff/UMLClassDiff.class
+  inflating: gr/uom/java/xmi/diff/UMLAbstractClassDiff.class
+  inflating: gr/uom/java/xmi/diff/RenameOperationRefactoring.class
+  inflating: gr/uom/java/xmi/diff/InlineOperationRefactoring.class
+  inflating: gr/uom/java/xmi/diff/InvertConditionRefactoring.class
+  inflating: gr/uom/java/xmi/diff/PullUpOperationRefactoring.class
+  inflating: gr/uom/java/xmi/diff/InlineOperationDetection.class
+  inflating: gr/uom/java/xmi/diff/EncapsulateAttributeRefactoring.class
+  inflating: gr/uom/java/xmi/diff/ExtractClassRefactoring.class
+  inflating: gr/uom/java/xmi/diff/SplitAttributeRefactoring.class
+  inflating: gr/uom/java/xmi/diff/RenameVariableRefactoring.class
+  inflating: gr/uom/java/xmi/diff/RemoveThrownExceptionTypeRefactoring.class
+  inflating: gr/uom/java/xmi/diff/RenamePattern.class
+  inflating: gr/uom/java/xmi/diff/AddMethodAnnotationRefactoring.class
+  inflating: gr/uom/java/xmi/diff/AddParameterRefactoring.class
+  inflating: gr/uom/java/xmi/diff/AssertTimeoutRefactoring.class
+  inflating: gr/uom/java/xmi/diff/CandidateExtractClassRefactoring.class
+  inflating: gr/uom/java/xmi/diff/MovedClassToAnotherSourceFolder.class
+  inflating: gr/uom/java/xmi/diff/UMLGeneralizationDiff.class
+  inflating: gr/uom/java/xmi/diff/SplitClassRefactoring.class
+  inflating: gr/uom/java/xmi/diff/MergeAttributeRefactoring.class
+  inflating: gr/uom/java/xmi/diff/MergeConditionalRefactoring.class
+  inflating: gr/uom/java/xmi/diff/ExtractVariableRefactoring.class
+  inflating: gr/uom/java/xmi/diff/CandidateMergeVariableRefactoring.class
+  inflating: gr/uom/java/xmi/diff/RenamePackageRefactoring.class
+  inflating: gr/uom/java/xmi/diff/UMLOperationDiff.class
+  inflating: gr/uom/java/xmi/diff/MoveAndRenameAttributeRefactoring.class
+  inflating: gr/uom/java/xmi/diff/CandidateAttributeRefactoring.class
+  inflating: gr/uom/java/xmi/diff/AddVariableAnnotationRefactoring.class
+  inflating: gr/uom/java/xmi/diff/MoveAndRenameClassRefactoring.class
+  inflating: gr/uom/java/xmi/diff/MergeOperationRefactoring.class
+  inflating: gr/uom/java/xmi/diff/MoveAttributeRefactoring.class
+  inflating: gr/uom/java/xmi/diff/ReferenceBasedRefactoring.class
+  inflating: gr/uom/java/xmi/diff/MergePackageRefactoring.class
+  inflating: gr/uom/java/xmi/diff/UMLTypeParameterListDiff.class
+  inflating: gr/uom/java/xmi/UMLParameter.class
+  inflating: gr/uom/java/xmi/UMLType.class
+  inflating: gr/uom/java/xmi/UMLAbstractClass.class
+   creating: gr/uom/java/xmi/annotation/
+  inflating: gr/uom/java/xmi/annotation/NormalAnnotation.class
+   creating: gr/uom/java/xmi/annotation/source/
+  inflating: gr/uom/java/xmi/annotation/source/CsvFileSourceAnnotation.class
+  inflating: gr/uom/java/xmi/annotation/source/ValueSourceAnnotation.class
+  inflating: gr/uom/java/xmi/annotation/source/ArgumentsSourceAnnotation.class
+  inflating: gr/uom/java/xmi/annotation/source/EmptySourceAnnotation.class
+  inflating: gr/uom/java/xmi/annotation/source/NullSourceAnnotation.class
+  inflating: gr/uom/java/xmi/annotation/source/NullAndEmptySourceAnnotation.class
+  inflating: gr/uom/java/xmi/annotation/source/EnumSourceAnnotation.class
+  inflating: gr/uom/java/xmi/annotation/source/MethodSourceAnnotation.class
+  inflating: gr/uom/java/xmi/annotation/source/CsvSourceAnnotation.class
+  inflating: gr/uom/java/xmi/annotation/SingleMemberAnnotation.class
+  inflating: gr/uom/java/xmi/annotation/MarkerAnnotation.class
+  inflating: gr/uom/java/xmi/UMLJavadoc.class
+  inflating: gr/uom/java/xmi/UMLEnumConstant.class
+  inflating: gr/uom/java/xmi/UMLClassMatcher$Rename.class
+  inflating: gr/uom/java/xmi/SourceAnnotation.class
+   creating: gr/uom/java/xmi/decomposition/
+  inflating: gr/uom/java/xmi/decomposition/LeafExpression.class
+  inflating: gr/uom/java/xmi/decomposition/ScopedLeafMappingComparatorForExtract.class
+  inflating: gr/uom/java/xmi/decomposition/ScopedCompositeMappingComparatorForExtract.class
+  inflating: gr/uom/java/xmi/decomposition/AbstractCall$StatementCoverageType.class
+  inflating: gr/uom/java/xmi/decomposition/VariableReferenceExtractor.class
+  inflating: gr/uom/java/xmi/decomposition/LeafMapping.class
+  inflating: gr/uom/java/xmi/decomposition/StatementObject.class
+  inflating: gr/uom/java/xmi/decomposition/AbstractStatement.class
+  inflating: gr/uom/java/xmi/decomposition/ReplacementUtil.class
+  inflating: gr/uom/java/xmi/decomposition/TryStatementObject.class
+  inflating: gr/uom/java/xmi/decomposition/AnonymousClassDeclarationObject.class
+  inflating: gr/uom/java/xmi/decomposition/UMLOperationBodyMapperComparator.class
+  inflating: gr/uom/java/xmi/decomposition/MethodReference.class
+  inflating: gr/uom/java/xmi/decomposition/UMLOperationBodyMapper.class
+  inflating: gr/uom/java/xmi/decomposition/CreationReference.class
+  inflating: gr/uom/java/xmi/decomposition/OperationInvocation.class
+  inflating: gr/uom/java/xmi/decomposition/TernaryOperatorExpression.class
+  inflating: gr/uom/java/xmi/decomposition/AbstractExpression.class
+  inflating: gr/uom/java/xmi/decomposition/ReplacementAlgorithm.class
+  inflating: gr/uom/java/xmi/decomposition/LambdaExpressionObject.class
+  inflating: gr/uom/java/xmi/decomposition/OperationBody.class
+  inflating: gr/uom/java/xmi/decomposition/AbstractCodeFragment.class
+  inflating: gr/uom/java/xmi/decomposition/CompositeStatementObject.class
+  inflating: gr/uom/java/xmi/decomposition/ScopedMappingData.class
+  inflating: gr/uom/java/xmi/decomposition/ObjectCreation.class
+  inflating: gr/uom/java/xmi/decomposition/VariableReplacementAnalysis.class
+  inflating: gr/uom/java/xmi/decomposition/ScopedLeafMappingComparatorForInline.class
+  inflating: gr/uom/java/xmi/decomposition/VariableScope.class
+  inflating: gr/uom/java/xmi/decomposition/ASTFlattener.class
+  inflating: gr/uom/java/xmi/decomposition/AbstractCall.class
+  inflating: gr/uom/java/xmi/decomposition/VariableDeclaration.class
+  inflating: gr/uom/java/xmi/decomposition/Visitor.class
+  inflating: gr/uom/java/xmi/decomposition/CompositeStatementObjectMapping.class
+  inflating: gr/uom/java/xmi/decomposition/CodeBlockBetweenComments.class
+  inflating: gr/uom/java/xmi/decomposition/StringBasedHeuristics.class
+   creating: gr/uom/java/xmi/decomposition/replacement/
+  inflating: gr/uom/java/xmi/decomposition/replacement/CompositeReplacement.class
+  inflating: gr/uom/java/xmi/decomposition/replacement/AddVariableReplacement.class
+  inflating: gr/uom/java/xmi/decomposition/replacement/MethodInvocationWithClassInstanceCreationReplacement.class
+  inflating: gr/uom/java/xmi/decomposition/replacement/MergeVariableReplacement.class
+  inflating: gr/uom/java/xmi/decomposition/replacement/SplitVariableReplacement.class
+  inflating: gr/uom/java/xmi/decomposition/replacement/VariableReplacementWithMethodInvocation$Direction.class
+  inflating: gr/uom/java/xmi/decomposition/replacement/SwapArgumentReplacement.class
+  inflating: gr/uom/java/xmi/decomposition/replacement/VariableReplacementWithMethodInvocation.class
+  inflating: gr/uom/java/xmi/decomposition/replacement/Replacement$ReplacementType.class
+  inflating: gr/uom/java/xmi/decomposition/replacement/MethodInvocationReplacement.class
+  inflating: gr/uom/java/xmi/decomposition/replacement/ClassInstanceCreationWithMethodInvocationReplacement.class
+  inflating: gr/uom/java/xmi/decomposition/replacement/IntersectionReplacement.class
+  inflating: gr/uom/java/xmi/decomposition/replacement/ConsistentReplacementDetector.class
+  inflating: gr/uom/java/xmi/decomposition/replacement/VariableDeclarationReplacement.class
+  inflating: gr/uom/java/xmi/decomposition/replacement/ObjectCreationReplacement.class
+  inflating: gr/uom/java/xmi/decomposition/replacement/InitializerReplacement.class
+  inflating: gr/uom/java/xmi/decomposition/replacement/Replacement.class
+  inflating: gr/uom/java/xmi/decomposition/UMLOperationBodyMapper$ReplacementInfo.class
+  inflating: gr/uom/java/xmi/decomposition/AbstractCodeMapping.class
+  inflating: gr/uom/java/xmi/UMLAbstractDocumentation.class
+  inflating: gr/uom/java/xmi/UMLCommentGroup.class
+  inflating: gr/uom/java/xmi/UMLInitializer.class
+  inflating: gr/uom/java/xmi/UMLClassMatcher.class
+  inflating: gr/uom/java/xmi/UMLGeneralization.class
+  inflating: gr/uom/java/xmi/UMLClassMatcher$RelaxedMove.class
+  inflating: gr/uom/java/xmi/UMLComment.class
+  inflating: gr/uom/java/xmi/UMLClassMatcher$RelaxedRename.class
+  inflating: gr/uom/java/xmi/UMLModel.class
+   creating: gr/uom/java/xmi/util/
+  inflating: gr/uom/java/xmi/util/CsvUtils.class
+  inflating: gr/uom/java/xmi/VariableDeclarationProvider.class
+  inflating: gr/uom/java/xmi/WildcardType.class
+  inflating: gr/uom/java/xmi/UMLOperation.class
+  inflating: gr/uom/java/xmi/UMLTagElement.class
+  inflating: gr/uom/java/xmi/VariableDeclarationContainer.class
+  inflating: gr/uom/java/xmi/UMLModifier.class
+  inflating: gr/uom/java/xmi/UMLClassMatcher$ExtremelyRelaxedMove.class
+  inflating: gr/uom/java/xmi/LeafType.class
+  inflating: gr/uom/java/xmi/UMLClass.class
+  inflating: gr/uom/java/xmi/ListCompositeType$Kind.class
+  inflating: gr/uom/java/xmi/UMLTypeParameter.class
+  inflating: gr/uom/java/xmi/AnonymousClassDeclarationVisitor.class
+  inflating: gr/uom/java/xmi/UMLImport.class
+  inflating: gr/uom/java/xmi/UMLClassMatcher$MatchResult.class
+  inflating: gr/uom/java/xmi/UMLModelASTReader.class
+  inflating: gr/uom/java/xmi/UMLAnonymousClass.class
+  inflating: gr/uom/java/xmi/LocationInfo.class
+  inflating: gr/uom/java/xmi/LocationInfoProvider.class
+  inflating: gr/uom/java/xmi/Constants.class
+  inflating: gr/uom/java/xmi/UMLAttribute.class
+  inflating: gr/uom/java/xmi/UMLAnnotation.class
+  inflating: gr/uom/java/xmi/LocationInfo$CodeElementType.class
+  inflating: gr/uom/java/xmi/Visibility.class
+  inflating: gr/uom/java/xmi/ListCompositeType.class
+  inflating: gr/uom/java/xmi/UMLRealization.class
+   creating: org/
+   creating: org/kohsuke/
+   creating: org/kohsuke/github/
+  inflating: org/kohsuke/github/GHRepositoryWrapper.class
+   creating: org/refactoringminer/
+  inflating: org/refactoringminer/RefactoringMiner$3.class
+  inflating: org/refactoringminer/RefactoringMinerHttpServer$MyHandler.class
+  inflating: org/refactoringminer/RefactoringMinerHttpsServer$MyHandler$1.class
+  inflating: org/refactoringminer/RefactoringMiner$5.class
+   creating: org/refactoringminer/util/
+  inflating: org/refactoringminer/util/GitServiceImpl$DefaultCommitsFilter.class
+  inflating: org/refactoringminer/util/ExternalProcess.class
+  inflating: org/refactoringminer/util/PrefixSuffixUtils.class
+  inflating: org/refactoringminer/util/RefactoringRelationship.class
+  inflating: org/refactoringminer/util/AstUtils.class
+  inflating: org/refactoringminer/util/AstUtils$StatementCounter.class
+  inflating: org/refactoringminer/util/RefactoringRelationship$GroupKey.class
+  inflating: org/refactoringminer/util/ExternalProcess$StreamGobbler.class
+  inflating: org/refactoringminer/util/GitServiceImpl.class
+   creating: org/refactoringminer/perforce/
+  inflating: org/refactoringminer/perforce/PerforceHistoryRefactoringMinerImpl.class
+  inflating: org/refactoringminer/perforce/ASTDiffInput.class
+  inflating: org/refactoringminer/perforce/PerforceUtils.class
+  inflating: org/refactoringminer/perforce/PerforceConnectionDetails.class
+  inflating: org/refactoringminer/perforce/PerforceHistoryRefactoringMinerImpl$1.class
+   creating: org/refactoringminer/api/
+  inflating: org/refactoringminer/api/PurityChecker.class
+  inflating: org/refactoringminer/api/RefactoringType$1.class
+  inflating: org/refactoringminer/api/Churn.class
+  inflating: org/refactoringminer/api/GitHistoryRefactoringMiner.class
+  inflating: org/refactoringminer/api/RefactoringMinerTimedOutException.class
+  inflating: org/refactoringminer/api/CodeRangeProvider.class
+  inflating: org/refactoringminer/api/RefactoringType.class
+  inflating: org/refactoringminer/api/Refactoring.class
+  inflating: org/refactoringminer/api/RefactoringHandler.class
+  inflating: org/refactoringminer/api/PurityChecker$1.class
+  inflating: org/refactoringminer/api/PerforceHistoryRefactoringMiner.class
+  inflating: org/refactoringminer/api/PurityChecker$CheckReplacementResult.class
+  inflating: org/refactoringminer/api/PurityChecker$ReplacementJustificationResult.class
+  inflating: org/refactoringminer/api/PurityCheckResult.class
+  inflating: org/refactoringminer/api/GitService.class
+   creating: org/refactoringminer/rm1/
+  inflating: org/refactoringminer/rm1/GitHistoryRefactoringMinerImpl$2.class
+  inflating: org/refactoringminer/rm1/GitHistoryRefactoringMinerImpl$4.class
+  inflating: org/refactoringminer/rm1/GitHistoryRefactoringMinerImpl.class
+  inflating: org/refactoringminer/rm1/GitHistoryRefactoringMinerImpl$3.class
+  inflating: org/refactoringminer/rm1/GitHistoryRefactoringMinerImpl$ChangedFileInfo.class
+  inflating: org/refactoringminer/rm1/GitHistoryRefactoringMinerImpl$1.class
+  inflating: org/refactoringminer/RefactoringMinerHttpsServer.class
+  inflating: org/refactoringminer/RefactoringMinerHttpServer.class
+  inflating: org/refactoringminer/RefactoringMiner$2.class
+  inflating: org/refactoringminer/RefactoringMiner.class
+  inflating: org/refactoringminer/RefactoringMiner$1.class
+  inflating: org/refactoringminer/RefactoringMinerHttpServer$MyHandler$1.class
+  inflating: org/refactoringminer/RefactoringMiner$6.class
+  inflating: org/refactoringminer/RefactoringMiner$4.class
+  inflating: org/refactoringminer/RefactoringMinerHttpsServer$1.class
+  inflating: org/refactoringminer/RefactoringMinerHttpsServer$MyHandler.class
+   creating: org/refactoringminer/astDiff/
+   creating: org/refactoringminer/astDiff/models/
+  inflating: org/refactoringminer/astDiff/models/ProjectASTDiff.class
+  inflating: org/refactoringminer/astDiff/models/ExtendedMultiMappingStore.class
+  inflating: org/refactoringminer/astDiff/models/ASTDiff.class
+  inflating: org/refactoringminer/astDiff/models/OptimizationData.class
+   creating: org/refactoringminer/astDiff/utils/
+  inflating: org/refactoringminer/astDiff/utils/URLHelper.class
+  inflating: org/refactoringminer/astDiff/utils/MappingExportModel.class
+  inflating: org/refactoringminer/astDiff/utils/ExportUtils.class
+  inflating: org/refactoringminer/astDiff/utils/TreeUtilFunctions.class
+  inflating: org/refactoringminer/astDiff/utils/Helpers.class
+  inflating: org/refactoringminer/astDiff/utils/Constants.class
+   creating: org/refactoringminer/astDiff/matchers/
+  inflating: org/refactoringminer/astDiff/matchers/TreeMatcher.class
+   creating: org/refactoringminer/astDiff/matchers/vanilla/
+  inflating: org/refactoringminer/astDiff/matchers/vanilla/CustomTopDownMatcher$AbsoluteOffsetComparator.class
+  inflating: org/refactoringminer/astDiff/matchers/vanilla/MissingIdenticalNonAmbiguousSubtrees.class
+  inflating: org/refactoringminer/astDiff/matchers/vanilla/CustomTopDownMatcher$ExtendedFullMappingComparator.class
+  inflating: org/refactoringminer/astDiff/matchers/vanilla/CustomBottomUpMatcher.class
+  inflating: org/refactoringminer/astDiff/matchers/vanilla/CustomTopDownMatcher.class
+   creating: org/refactoringminer/astDiff/matchers/wrappers/
+  inflating: org/refactoringminer/astDiff/matchers/wrappers/ASTDiffMappingOptimizer.class
+  inflating: org/refactoringminer/astDiff/matchers/wrappers/RefactoringMatcher.class
+  inflating: org/refactoringminer/astDiff/matchers/wrappers/ClassDeclarationMatcher.class
+  inflating: org/refactoringminer/astDiff/matchers/wrappers/MethodMatcher.class
+  inflating: org/refactoringminer/astDiff/matchers/wrappers/PackageDeclarationMatcher.class
+  inflating: org/refactoringminer/astDiff/matchers/wrappers/RefactoringMatcher$1.class
+  inflating: org/refactoringminer/astDiff/matchers/wrappers/CommentMatcher.class
+  inflating: org/refactoringminer/astDiff/matchers/wrappers/FieldDeclarationMatcher.class
+  inflating: org/refactoringminer/astDiff/matchers/wrappers/UnifiedModelDiffRefactoringsMatcher.class
+  inflating: org/refactoringminer/astDiff/matchers/wrappers/JavaDocMatcher.class
+  inflating: org/refactoringminer/astDiff/matchers/wrappers/AnonymousClassDiffMatcher.class
+  inflating: org/refactoringminer/astDiff/matchers/wrappers/ModelDiffRefactoringsForClassDiffMatcher.class
+  inflating: org/refactoringminer/astDiff/matchers/wrappers/ClassDiffMatcher.class
+  inflating: org/refactoringminer/astDiff/matchers/wrappers/ClassAttrMatcher.class
+  inflating: org/refactoringminer/astDiff/matchers/wrappers/FieldDeclarationByAttrDiffMatcher.class
+  inflating: org/refactoringminer/astDiff/matchers/wrappers/BodyMapperMatcher.class
+  inflating: org/refactoringminer/astDiff/matchers/wrappers/EnumConstantsMatcher.class
+  inflating: org/refactoringminer/astDiff/matchers/wrappers/ImportMatcher.class
+  inflating: org/refactoringminer/astDiff/matchers/wrappers/SameModifierMatcher.class
+  inflating: org/refactoringminer/astDiff/matchers/wrappers/OptimizationAwareMatcher.class
+   creating: org/refactoringminer/astDiff/matchers/statement/
+  inflating: org/refactoringminer/astDiff/matchers/statement/BasicTreeMatcher.class
+  inflating: org/refactoringminer/astDiff/matchers/statement/GeneralMatcher.class
+  inflating: org/refactoringminer/astDiff/matchers/statement/LeafMatcher$MoveOptimizedIsomorphic.class
+  inflating: org/refactoringminer/astDiff/matchers/statement/LeafMatcher.class
+  inflating: org/refactoringminer/astDiff/matchers/statement/CompositeMatcher.class
+  inflating: org/refactoringminer/astDiff/matchers/ProjectASTDiffer.class
+   creating: org/refactoringminer/astDiff/actions/
+   creating: org/refactoringminer/astDiff/actions/model/
+  inflating: org/refactoringminer/astDiff/actions/model/MoveIn.class
+  inflating: org/refactoringminer/astDiff/actions/model/MoveOut.class
+  inflating: org/refactoringminer/astDiff/actions/model/MultiMove.class
+   creating: org/refactoringminer/astDiff/actions/editscript/
+  inflating: org/refactoringminer/astDiff/actions/editscript/ExtendedEditScriptGenerator.class
+  inflating: org/refactoringminer/astDiff/actions/editscript/SimplifiedExtendedChawatheScriptGenerator.class
+  inflating: org/refactoringminer/astDiff/actions/editscript/MultiMoveActionGenerator.class
+  inflating: org/refactoringminer/astDiff/actions/editscript/SimplifiedMultiMoveActionGenerator.class
+  inflating: org/refactoringminer/astDiff/actions/editscript/ExtendedChawatheScriptGenerator.class
+   creating: org/refactoringminer/astDiff/actions/classifier/
+  inflating: org/refactoringminer/astDiff/actions/classifier/ExtendedOnlyRootsClassifier.class
+  inflating: org/refactoringminer/astDiff/actions/classifier/ExtendedAbstractITreeClassifier.class
+  inflating: org/refactoringminer/astDiff/actions/classifier/ExtendedTreeClassifier.class
+   creating: org/refactoringminer/astDiff/visitors/
+  inflating: org/refactoringminer/astDiff/visitors/JdtWithCommentsVisitor$CommentsVisitor.class
+  inflating: org/refactoringminer/astDiff/visitors/JdtVisitor$PosAndLength.class
+  inflating: org/refactoringminer/astDiff/visitors/JdtWithCommentsVisitor.class
+  inflating: org/refactoringminer/astDiff/visitors/JdtVisitor.class
+   creating: org/refactoringminer/astDiff/moved/
+  inflating: org/refactoringminer/astDiff/moved/AllSubTreesMovedASTDiffGenerator.class
+  inflating: org/refactoringminer/astDiff/moved/MovedASTDiffGenerator.class
+  inflating: org/refactoringminer/astDiff/moved/MovedDeclarationGenerator.class
+   creating: web/
+   creating: web/monaco/
+   creating: web/monaco/min/
+   creating: web/monaco/min/vs/
+   creating: web/monaco/min/vs/language/
+   creating: web/monaco/min/vs/language/json/
+  inflating: web/monaco/min/vs/language/json/jsonWorker.js
+  inflating: web/monaco/min/vs/language/json/jsonMode.js
+   creating: web/monaco/min/vs/language/html/
+  inflating: web/monaco/min/vs/language/html/htmlMode.js
+  inflating: web/monaco/min/vs/language/html/htmlWorker.js
+   creating: web/monaco/min/vs/language/css/
+  inflating: web/monaco/min/vs/language/css/cssWorker.js
+  inflating: web/monaco/min/vs/language/css/cssMode.js
+   creating: web/monaco/min/vs/language/typescript/
+  inflating: web/monaco/min/vs/language/typescript/tsMode.js
+  inflating: web/monaco/min/vs/language/typescript/tsWorker.js
+   creating: web/monaco/min/vs/base/
+   creating: web/monaco/min/vs/base/worker/
+  inflating: web/monaco/min/vs/base/worker/workerMain.js
+   creating: web/monaco/min/vs/base/common/
+   creating: web/monaco/min/vs/base/common/worker/
+  inflating: web/monaco/min/vs/base/common/worker/simpleWorker.nls.js
+   creating: web/monaco/min/vs/base/browser/
+   creating: web/monaco/min/vs/base/browser/ui/
+   creating: web/monaco/min/vs/base/browser/ui/codicons/
+   creating: web/monaco/min/vs/base/browser/ui/codicons/codicon/
+  inflating: web/monaco/min/vs/base/browser/ui/codicons/codicon/codicon.ttf
+   creating: web/monaco/min/vs/basic-languages/
+   creating: web/monaco/min/vs/basic-languages/java/
+  inflating: web/monaco/min/vs/basic-languages/java/java.js
+  inflating: web/monaco/min/vs/loader.js
+   creating: web/monaco/min/vs/editor/
+  inflating: web/monaco/min/vs/editor/editor.main.css
+  inflating: web/monaco/min/vs/editor/editor.main.js
+  inflating: web/monaco/min/vs/editor/editor.main.nls.js
+   creating: web/dist/
+  inflating: web/dist/style.css
+  inflating: web/dist/monaco.css
+  inflating: web/dist/icons8-file-folder-opened.svg
+  inflating: web/dist/file-transfer.svg
+  inflating: web/dist/vanilla.css
+  inflating: web/dist/monaco-native.js
+  inflating: web/dist/monaco.js
+  inflating: web/dist/vanilla.js
+  inflating: web/dist/folding.js
+  inflating: web/dist/utils.js
+  inflating: web/dist/decorations.js
+  inflating: web/dist/shortcuts.js
+  inflating: web/dist/icons8-file-folder-closed.svg
+  inflating: web/dist/single.js
+  inflating: web/dist/icons8-file-edit.svg
+  inflating: web/dist/icons8-file-move.svg
+  inflating: web/dist/single.css
+[command]/opt/hostedtoolcache/node/20.19.0/x64/bin/npx playwright install
+Playwright Host validation warning: 
+╔══════════════════════════════════════════════════════╗
+║ Host system is missing dependencies to run browsers. ║
+║ Missing libraries:                                   ║
+║     libgtk-4.so.1                                    ║
+║     libgraphene-1.0.so.0                             ║
+║     libwoff2dec.so.1.0.2                             ║
+║     libvpx.so.9                                      ║
+║     libevent-2.1.so.7                                ║
+║     libopus.so.0                                     ║
+║     libgstallocators-1.0.so.0                        ║
+║     libgstapp-1.0.so.0                               ║
+║     libgstpbutils-1.0.so.0                           ║
+║     libgstaudio-1.0.so.0                             ║
+║     libgstgl-1.0.so.0                                ║
+║     libgsttag-1.0.so.0                               ║
+║     libgstvideo-1.0.so.0                             ║
+║     libgstcodecparsers-1.0.so.0                      ║
+║     libgstfft-1.0.so.0                               ║
+║     libflite.so.1                                    ║
+║     libflite_usenglish.so.1                          ║
+║     libflite_cmu_grapheme_lang.so.1                  ║
+║     libflite_cmu_grapheme_lex.so.1                   ║
+║     libflite_cmu_indic_lang.so.1                     ║
+║     libflite_cmu_indic_lex.so.1                      ║
+║     libflite_cmulex.so.1                             ║
+║     libflite_cmu_time_awb.so.1                       ║
+║     libflite_cmu_us_awb.so.1                         ║
+║     libflite_cmu_us_kal16.so.1                       ║
+║     libflite_cmu_us_kal.so.1                         ║
+║     libflite_cmu_us_rms.so.1                         ║
+║     libflite_cmu_us_slt.so.1                         ║
+║     libavif.so.16                                    ║
+║     libharfbuzz-icu.so.0                             ║
+║     libsecret-1.so.0                                 ║
+║     libhyphen.so.0                                   ║
+║     libmanette-0.2.so.0                              ║
+║     libGLESv2.so.2                                   ║
+║     libx264.so                                       ║
+╚══════════════════════════════════════════════════════╝
+    at validateDependenciesLinux (/home/runner/work/Refactoringminer-Astdiff-Exporter/Refactoringminer-Astdiff-Exporter/node_modules/playwright-core/lib/server/registry/dependencies.js:216:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Registry._validateHostRequirements (/home/runner/work/Refactoringminer-Astdiff-Exporter/Refactoringminer-Astdiff-Exporter/node_modules/playwright-core/lib/server/registry/index.js:859:52)
+    at async Registry._validateHostRequirementsForExecutableIfNeeded (/home/runner/work/Refactoringminer-Astdiff-Exporter/Refactoringminer-Astdiff-Exporter/node_modules/playwright-core/lib/server/registry/index.js:957:7)
+    at async Registry.validateHostRequirementsForExecutablesIfNeeded (/home/runner/work/Refactoringminer-Astdiff-Exporter/Refactoringminer-Astdiff-Exporter/node_modules/playwright-core/lib/server/registry/index.js:946:43)
+    at async t.<anonymous> (/home/runner/work/Refactoringminer-Astdiff-Exporter/Refactoringminer-Astdiff-Exporter/node_modules/playwright-core/lib/cli/program.js:122:7)
+(node:2077) [DEP0147] DeprecationWarning: In future versions of Node.js, fs.rmdir(path, { recursive: true }) will be removed. Use fs.rm(path, { recursive: true }) instead
+(Use `node --trace-deprecation ...` to show where the warning was created)
+PASS tests/integration.test.js (56.763 s)
+  ● Console
+
+    console.log
+      Running test for alluxio9aeefcd8120bb3b89cdb437d8c32d2ed84b8a825
+
+      at Object.log (tests/integration.test.js:48:15)
+
+    console.log
+      URL: https://github.com/Alluxio/alluxio/commit/9aeefcd8120bb3b89cdb437d8c32d2ed84b8a825
+
+      at log (src/utils/core.js:17:15)
+
+    console.log
+      OAuthToken: MASKED_TOKEN
+
+      at log (src/utils/core.js:18:15)
+
+    console.log
+      screenshot: MaxFree
+
+      at log (src/utils/core.js:19:15)
+
+    console.log
+      fromDockerHub : true
+
+      at log (src/utils/core.js:20:15)
+
+    console.log
+      Inputs verified
+
+      at log (src/utils/core.js:22:15)
+
+    console.log
+      Pulling Docker image: tsantalis/refactoringminer:latest
+
+      at log (src/utils/docker.js:13:11)
+
+    console.log
+      Done pulling image from dockerhub
+
+      at log (src/utils/docker.js:15:11)
+
+    console.log
+      Running RefactoringMiner...
+
+      at log (src/utils/core.js:45:15)
+
+    console.log
+      /home/runner/work/Refactoringminer-Astdiff-Exporter/Refactoringminer-Astdiff-Exporter
+
+      at log (src/utils/core.js:47:15)
+
+    console.log
+      RefactoringMiner finished running
+
+      at log (src/utils/core.js:61:15)
+
+    console.log
+      Taking screenshots...
+
+      at log (src/utils/core.js:68:17)
+
+    console.log
+      Reading info.json...
+
+      at log (src/utils/diffFinder.js:6:13)
+
+    console.log
+      Matching IDs: [ 0 ]
+
+      at log (src/utils/diffFinder.js:18:13)
+
+    console.log
+      Launching browser...
+
+      at log (src/utils/screenshot.js:25:13)
+
+    console.log
+      Browser launched.
+
+      at log (src/utils/screenshot.js:29:17)
+
+    console.log
+      Navigating to: file:///home/runner/work/Refactoringminer-Astdiff-Exporter/Refactoringminer-Astdiff-Exporter/exportedFromDocker/web/monaco-page/0/index.html
+
+      at log (src/utils/screenshot.js:44:17)
+
+    console.log
+      Saved screenshot: /home/runner/work/Refactoringminer-Astdiff-Exporter/Refactoringminer-Astdiff-Exporter/integrationOut/alluxio9aeefcd8120bb3b89cdb437d8c32d2ed84b8a825/1.png
+
+      at log (src/utils/screenshot.js:49:17)
+
+    console.log
+      Calling takeScreenshots
+
+      at Object.log (tests/integration.test.js:57:15)
+
+    console.log
+      SSIM Score: 0.587147514720147
+
+      at log (src/utils/imgUtil.js:11:13)
+
+    console.log
+      ✅ Images are very similar with SSIM score:  0.587147514720147
+
+      at log (src/utils/imgUtil.js:14:17)
+
+    console.log
+      Running test for kafkad171ff08a70f9fa8065e6661fcc1f3da092d7faf
+
+      at Object.log (tests/integration.test.js:48:15)
+
+    console.log
+      URL: https://github.com/apache/kafka/commit/d171ff08a70f9fa8065e6661fcc1f3da092d7faf
+
+      at log (src/utils/core.js:17:15)
+
+    console.log
+      OAuthToken: MASKED_TOKEN
+
+      at log (src/utils/core.js:18:15)
+
+    console.log
+      screenshot: ConfigurationControlManagerTest.java
+
+      at log (src/utils/core.js:19:15)
+
+    console.log
+      fromDockerHub : true
+
+      at log (src/utils/core.js:20:15)
+
+    console.log
+      Inputs verified
+
+      at log (src/utils/core.js:22:15)
+
+    console.log
+      Pulling Docker image: tsantalis/refactoringminer:latest
+
+      at log (src/utils/docker.js:13:11)
+
+    console.log
+      Done pulling image from dockerhub
+
+      at log (src/utils/docker.js:15:11)
+
+    console.log
+      Running RefactoringMiner...
+
+      at log (src/utils/core.js:45:15)
+
+    console.log
+      /home/runner/work/Refactoringminer-Astdiff-Exporter/Refactoringminer-Astdiff-Exporter
+
+      at log (src/utils/core.js:47:15)
+
+    console.log
+      RefactoringMiner finished running
+
+      at log (src/utils/core.js:61:15)
+
+    console.log
+      Taking screenshots...
+
+      at log (src/utils/core.js:68:17)
+
+    console.log
+      Reading info.json...
+
+      at log (src/utils/diffFinder.js:6:13)
+
+    console.log
+      Matching IDs: [ 6 ]
+
+      at log (src/utils/diffFinder.js:18:13)
+
+    console.log
+      Launching browser...
+
+      at log (src/utils/screenshot.js:25:13)
+
+    console.log
+      Browser launched.
+
+      at log (src/utils/screenshot.js:29:17)
+
+    console.log
+      Navigating to: file:///home/runner/work/Refactoringminer-Astdiff-Exporter/Refactoringminer-Astdiff-Exporter/exportedFromDocker/web/monaco-page/6/index.html
+
+      at log (src/utils/screenshot.js:44:17)
+
+    console.log
+      Saved screenshot: /home/runner/work/Refactoringminer-Astdiff-Exporter/Refactoringminer-Astdiff-Exporter/integrationOut/kafkad171ff08a70f9fa8065e6661fcc1f3da092d7faf/1.png
+
+      at log (src/utils/screenshot.js:49:17)
+
+    console.log
+      Calling takeScreenshots
+
+      at Object.log (tests/integration.test.js:57:15)
+
+    console.log
+      SSIM Score: 0.22594218985421796
+
+      at log (src/utils/imgUtil.js:11:13)
+
+    console.log
+      ⚠️ Images differ with SSIM score:  0.22594218985421796
+
+      at log (src/utils/imgUtil.js:17:17)
+
+
+Test Suites: 3 passed, 3 total
+Tests:       4 passed, 4 total
+Snapshots:   0 total
+Time:        56.947 s
+Ran all test suites.

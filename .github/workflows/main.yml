@@ -114,6 +114,8 @@ jobs:
     needs: build_dist
     runs-on: ubuntu-latest
     if: ${{ github.event.head_commit.author.username != 'invalid-email-address' }}
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
   

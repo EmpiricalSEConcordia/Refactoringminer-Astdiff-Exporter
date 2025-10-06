@@ -108,3 +108,44 @@ jobs:
         uses: peter-evans/repository-dispatch@v3
         with:
           event-type: dispatch_tests
+
+
+  release:
+    needs: build_dist
+    runs-on: ubuntu-latest
+    if: ${{ github.event.head_commit.author.username != 'invalid-email-address' }}
+    steps:
+      - uses: actions/checkout@v4
+  
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+  
+      - name: Zip dist folder
+        run: zip -r dist.zip dist
+  
+      - name: Get package version
+        id: pkg
+        run: |
+          VERSION=$(node -p "require('./package.json').version")
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
+  
+      - name: Create GitHub Release
+        id: create_release
+        uses: actions/create-release@v1
+        with:
+          tag_name: "v${{ env.VERSION }}"
+          release_name: "Release v${{ env.VERSION }}"
+          draft: false
+          prerelease: false
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  
+      - name: Upload dist
+        uses: actions/upload-release-asset@v1
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./dist.zip
+          asset_name: dist.zip
+          asset_content_type: application/zip

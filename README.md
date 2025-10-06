@@ -57,7 +57,7 @@ jobs:
 ```
 
 ## Interesting Use Cases
-Checkout our wiki to find more interesing use cases.
+Checkout our wiki to find more interesing [examples](https://github.com/EmpiricalSEConcordia/Refactoringminer-Astdiff-Exporter/wiki/Examples)
 
 
 

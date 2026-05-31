@@ -94991,14 +94991,12 @@ module.exports = { getImageFromDockerHub, buildImageFromRepo };
 /***/ 8074:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
-const { chromium, firefox, webkit } = __nccwpck_require__(1788);
-const exec = __nccwpck_require__(7559);
+const { chromium } = __nccwpck_require__(1788);
 
 const getMatchingIds = __nccwpck_require__(6793);
 const fs = __nccwpck_require__(9896);
 const path = __nccwpck_require__(6928);
 async function takeScreenshots(inputFilePath, exportDir, outputDir = 'out', infoFilePath = 'info.json') {
-    await exec.exec('npx playwright install');
     if (!inputFilePath || !exportDir) {
         console.error('Error: Both input file path and export directory must be provided.');
         return;
@@ -95022,8 +95020,9 @@ async function takeScreenshots(inputFilePath, exportDir, outputDir = 'out', info
         console.log('Browser launched.');
     } catch (error) {
         console.error('Error launching browser:', error);
+        throw error;
     }
-    
+
     const context = await browser.newContext({
         viewport: { width: 1920, height: 1080 }
       });

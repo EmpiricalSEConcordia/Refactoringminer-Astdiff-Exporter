@@ -62,6 +62,7 @@ jobs:
           git diff --exit-code logs || (
               git add logs
               git commit -m 'chore: update test logs [skip ci]'
+              git pull --rebase
               git push
               )
         

@@ -36,6 +36,6 @@ jobs:
             git config --global user.email 'pouryafard75@gmail.com'
             git diff --exit-code dist || (
                 git add dist
-                git commit -m 'chore: update dist folder'
+                git commit -m 'chore: update dist folder [skip ci]'
                 git push
             )

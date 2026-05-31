@@ -32,8 +32,8 @@ jobs:
 
       - name: Commit and push dist folder
         run: |
-            git config --global user.name 'github-actions'
-            git config --global user.email 'github-actions@github.com'
+            git config --global user.name 'Pouryafard75'
+            git config --global user.email 'pouryafard75@gmail.com'
             git diff --exit-code dist || (
                 git add dist
                 git commit -m 'chore: update dist folder'

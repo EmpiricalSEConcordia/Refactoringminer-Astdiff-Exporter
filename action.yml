@@ -17,6 +17,11 @@ inputs:
     description: 'Name of the file that you want to take screenshot of'
     required: false
     default: ''
+
+  fromDockerHub:
+    description: 'If true, pulls the RefactoringMiner image from DockerHub; if false, builds it from the repo'
+    required: false
+    default: 'true'
   
 outputs:
   artifact_url:

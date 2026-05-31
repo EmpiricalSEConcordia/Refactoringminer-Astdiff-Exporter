@@ -1,11 +1,9 @@
-const { chromium, firefox, webkit } = require('playwright');
-const exec = require('@actions/exec');
+const { chromium } = require('playwright');
 
 const getMatchingIds = require('./diffFinder');
 const fs = require('fs');
 const path = require('path');
 async function takeScreenshots(inputFilePath, exportDir, outputDir = 'out', infoFilePath = 'info.json') {
-    await exec.exec('npx playwright install');
     if (!inputFilePath || !exportDir) {
         console.error('Error: Both input file path and export directory must be provided.');
         return;
@@ -29,8 +27,9 @@ async function takeScreenshots(inputFilePath, exportDir, outputDir = 'out', info
         console.log('Browser launched.');
     } catch (error) {
         console.error('Error launching browser:', error);
+        throw error;
     }
-    
+
     const context = await browser.newContext({
         viewport: { width: 1920, height: 1080 }
       });

